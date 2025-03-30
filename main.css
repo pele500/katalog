@@ -1,0 +1,444 @@
+*{
+    direction: rtl;
+}
+.bg{
+    position: absolute;
+    background-image: url(./assets/קטלוג\ 1-01.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0vh;
+    right: 0vw;
+}
+.icons{
+    position: absolute;
+    height: 8vh;
+    top: 2vh;
+    left: 50%;
+    transform: translate(-50%);
+}
+#textP1{
+    position: absolute;
+    top: 17vh;
+    width: 43vh;
+    left: 50%;
+    transform: translate(-50%);
+}
+#textP2{
+    position: absolute;
+    width: 100vw;
+    bottom: 5vh;
+}
+.pages{
+    display: none;
+}
+#kata3{
+    position: absolute;
+    width: 37vh;
+    bottom: 6vh;
+    left: 50%;
+    transform: translate(-50%);
+}
+#next{
+    position: absolute;
+    width: 61vw;
+    bottom: 6vh;
+    right: 20vw;
+}
+#textP3{
+    position: absolute;
+    top: 0vh;
+    right: 0vw;
+    width: 100vw;
+}
+#toKatalog{
+    position: absolute;
+    width: 56vw;
+    height: 5vh;
+    bottom: -64vh;
+    right: 22vw;
+}
+/* #mySearch{
+    position: absolute;
+    width: 79vw;
+    z-index: 1;
+    right: 6vw;
+    font-size: 2vh;
+}
+#search{
+    z-index: -2;
+    position: absolute;
+    top: 6vh;
+    right: 7vw;
+    font-size: 2.5vh;
+} */
+#info{
+    position: absolute;
+    width: 100vw;
+    top: 0vh;
+    right: 0vw;
+}
+#toMarhas{
+    position: absolute;
+    width: 33vw;
+    height: 21vh;
+    top: 44vh;
+    right: 8vw;
+}
+.imgs{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0vh;
+    right: 0vw;
+}
+#marhsK{
+    position: absolute;
+    width: 93vw;
+    height: 6vh;
+    bottom: 4vh;
+    right: 3vw;
+}
+#back{
+    display: none;
+    position: absolute;
+    color: ghostwhite;
+    z-index: 2;
+    font-size: 2.5vh;
+    top: 6.7vh;
+    left: 13vw;
+    text-decoration-line: underline;
+}
+#trains{
+    display: none;
+    position: absolute;
+    color: ghostwhite;
+    z-index: 2;
+    font-size: 2.5vh;
+    top: 6.7vh;
+    left: 13vw;
+    text-decoration-line: underline;
+}
+#marhsAdd{
+    display: none;
+    position: absolute;
+    width: 56vw;
+    height: 5vh;
+    bottom: 4vh;
+    right: 22vw;
+    z-index: 2;
+}
+#train3{
+    position: absolute;
+    width: 30vw;
+    height: 9vh;
+    top: 24.4vh;
+    right: 6vw;
+}
+#train4{
+    position: absolute;
+    width: 30vw;
+    height: 9.5vh;
+    top: 34.4vh;
+    right: 6vw;
+}
+#train5{
+    position: absolute;
+    width: 30vw;
+    height: 9.3vh;
+    top: 44.8vh;
+    right: 6vw;
+}
+#train6{
+    position: absolute;
+    width: 30vw;
+    height: 9.5vh;
+    top: 55vh;
+    right: 6vw;
+}
+#train7{
+    position: absolute;
+    width: 30vw;
+    height: 9.5vh;
+    top: 65.4vh;
+    right: 6vw;
+}
+#train8{
+    position: absolute;
+    width: 53vw;
+    height: 8vh;
+    top: 24vh;
+    right: 41vw;
+}
+#train9{
+    position: absolute;
+    width: 53vw;
+    height: 8vh;
+    top: 32.4vh;
+    right: 41vw;
+}
+#train10{
+    position: absolute;
+    width: 53vw;
+    height: 8vh;
+    top: 40.5vh;
+    right: 41vw;
+}
+#train11{
+    position: absolute;
+    width: 53vw;
+    height: 8vh;
+    top: 49vh;
+    right: 41vw;
+}
+#train12{
+    position: absolute;
+    width: 53vw;
+    height: 8vh;
+    top: 57vh;
+    right: 41vw;
+}
+#train13{
+    position: absolute;
+    width: 53vw;
+    height: 8vh;
+    top: 65.5vh;
+    right: 41vw;
+}
+#train14{
+    position: absolute;
+    width: 53vw;
+    height: 8vh;
+    top: 73.8vh;
+    right: 41vw;
+}
+#train15{
+    position: absolute;
+    width: 53vw;
+    height: 8vh;
+    top: 82vh;
+    right: 41vw;
+}
+#k1{
+    position: absolute;
+    width: 30vw;
+    height: 9vh;
+    top: 23.8vh;
+    right: 18vw;  
+}
+#k2{
+    position: absolute;
+    width: 30vw;
+    height: 9.2vh;
+    top: 34.2vh;
+    right: 18vw;
+}
+#k3{
+    position: absolute;
+    width: 30vw;
+    height: 9vh;
+    top: 23.8vh;
+    right: 51.7vw;
+}
+#k4{
+    position: absolute;
+    width: 30vw;
+    height: 9.2vh;
+    top: 34.2vh;
+    right: 51.7vw;
+}
+#toFArea{
+    position: absolute;
+    width: 33vw;
+    height: 30vh;
+    top: 92vh;
+    right: 8vw;
+}
+#fireA2{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 24.6vh;
+    right: 10vw;
+}
+#fireA3{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 33.1vh;
+    right: 10vw;
+
+}
+#fireA4{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 41.8vh;
+    right: 10vw;
+}
+#fireA5{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 50.2vh;
+    right: 10vw;
+}
+#fireA6{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 59vh;
+    right: 10vw;
+
+}
+#fireA7{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 24.6vh;
+    right: 50.5vw;
+}
+#fireA8{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 33.1vh;
+    right: 50.5vw;
+}
+#fireA9{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 41.8vh;
+    right: 50.5vw;
+}
+#fireA10{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 50.2vh;
+    right: 50.5vw;
+}
+#fireA11{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 59vh;
+    right: 50.5vw;
+}
+#fireA12{
+    position: absolute;
+    width: 39vw;
+    height: 8vh;
+    top: 67.6vh;
+    right: 30.5vw;
+}
+#toMNorth{
+    position: absolute;
+    width: 33vw;
+    height: 22vh;
+    top: 21vh;
+    right: 8vw; 
+}
+#toDarom{
+    position: absolute;
+    width: 33vw;
+    height: 22vh;
+    top: 21vh;
+    right: 59vw;
+}
+#nextD{
+    display: none;
+    position: absolute;
+    width: 92vw;
+    height: 5vh;
+    top: 90vh;
+    right: 4vw;
+}
+#nextD2{
+    display: none;
+    position: absolute;
+    width: 92vw;
+    height: 5vh;
+    top: 90vh;
+    right: 4vw;
+}
+#darom1{
+    position: absolute;
+    width: 75vw;
+    height: 8vh;
+    top: 27vh;
+    right: 12vw;
+}
+#darom2{
+    position: absolute;
+    width: 75vw;
+    height: 8vh;
+    top: 35.5vh;
+    right: 12vw;
+}
+#darom3{
+    position: absolute;
+    width: 75vw;
+    height: 8vh;
+    top: 44.2vh;
+    right: 12vw;
+}
+#darom4{
+    position: absolute;
+    width: 75vw;
+    height: 8vh;
+    top: 53vh;
+    right: 12vw;
+}
+#mikz1{
+    position: absolute;
+    width: 46vw;
+    height: 8vh;
+    top: 37vh;
+    right: 3vw;
+}
+#mikz2{
+    position: absolute;
+    width: 46vw;
+    height: 8vh;
+    top: 45.5vh;
+    right: 3vw;
+}
+#mikz3{
+    position: absolute;
+    width: 46vw;
+    height: 8vh;
+    top: 54.5vh;
+    right: 3vw;
+}
+#mikz4{
+    position: absolute;
+    width: 46vw;
+    height: 8vh;
+    top: 63vh;
+    right: 3vw;
+}
+#mikz5{
+    position: absolute;
+    width: 46vw;
+    height: 8vh;
+    top: 37vh;
+    right: 51vw;
+}
+#mikz6{
+    position: absolute;
+    width: 46vw;
+    height: 8vh;
+    top: 45.6vh;
+    right: 51vw;
+}
+#mikz7{
+    position: absolute;
+    width: 46vw;
+    height: 8vh;
+    top: 54.6vh;
+    right: 51vw;
+}
