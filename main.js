@@ -71,6 +71,7 @@ const svil = () =>{
     document.getElementById('toFArea').removeEventListener('click',fireArea);
     document.getElementById('toDarom').removeEventListener('click',darom);
     document.getElementById('toSvil').removeEventListener('click',svil);
+    alert('hi');
     document.getElementById('page4').style.display = 'none';
     document.getElementById('page3').style.display = 'inline';
     document.getElementById('toKatalog').addEventListener('click',page4);
