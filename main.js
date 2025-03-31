@@ -54,6 +54,7 @@ const page4 = () =>{
     document.getElementById('toMarhas').addEventListener('click',marhas);
     document.getElementById('toFArea').addEventListener('click',fireArea);
     document.getElementById('toDarom').addEventListener('click',darom);
+    document.getElementById('toSvil').addEventListener('click',svil);
     // document.getElementById('trains').addEventListener('click',seeTrain);
 }
 const seeTrain = () =>{
@@ -62,6 +63,14 @@ const seeTrain = () =>{
 function addTrain (name){
     console.log(name);
     document.getElementById('training').innerHTML += `<li>${name}</li>`;
+}
+const svil = () =>{
+    document.getElementById('toMarhas').removeEventListener('click',marhas);
+    document.getElementById('toFArea').removeEventListener('click',fireArea);
+    document.getElementById('toDarom').removeEventListener('click',darom);
+    document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('page4').style.display = 'none';
+    document.getElementById('page3').style.display = 'inline';
 }
 const darom = () =>{
     document.getElementById('toMarhas').removeEventListener('click',marhas);
