@@ -28,8 +28,9 @@
 }
 #textP2{
     position: absolute;
-    width: 100vw;
+    width: 99vw;
     bottom: 5vh;
+    right: 1vw;
 }
 .pages{
     display: none;
