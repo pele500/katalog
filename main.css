@@ -82,12 +82,17 @@
     right: 0vw;
 }
 #toSvil{
+    position: absolute;
+    width: 33vw;
+    height: 21vh;
+    top: 65vh;
+    right: 8vw;
 }
 #toMarhas{
     position: absolute;
     width: 33vw;
-    height: 19vh;
-    top: 44vh;
+    height: 20vh;
+    top: 43vh;
     right: 8vw;
 }
 .imgs{
@@ -255,8 +260,8 @@
 #toFArea{
     position: absolute;
     width: 33vw;
-    height: 30vh;
-    top: 89vh;
+    height:29vh;
+    top: 88vh;
     right: 8vw;
 }
 #fireA2{
@@ -348,8 +353,8 @@
 #toDarom{
     position: absolute;
     width: 33vw;
-    height: 19vh;
-    top: 21vh;
+    height: 21vh;
+    top: 20vh;
     right: 59vw;
 }
 #nextD{
