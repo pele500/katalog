@@ -41,7 +41,7 @@ const page4 = () =>{
     document.getElementById('next').removeEventListener('click',page4);
     document.getElementById('back').removeEventListener('click',page4);
     document.getElementById('nextD').removeEventListener('click',darom2);
-    document.getElementById('page3').style.display = 'none';
+    document.getElementById('page2').style.display = 'none';
     document.getElementById('marhas').style.display = 'none';
     document.getElementById('fireArea').style.display = 'none';
     document.getElementById('back').style.display = 'none';
@@ -111,6 +111,7 @@ const darom3 = () =>{
     document.getElementById('darom4').addEventListener('click',mikzoaot);
 }
 const mikzoaot = () =>{
+    document.getElementById('back').removeEventListener('click',darom2);
     document.getElementById('darom4').removeEventListener('click',mikzoaot);
     document.getElementById('back').removeEventListener('click',mikzoaot);
     document.getElementById('darom').style.display = 'none'; 
