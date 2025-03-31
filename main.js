@@ -41,6 +41,7 @@ const page4 = () =>{
     document.getElementById('next').removeEventListener('click',page4);
     document.getElementById('back').removeEventListener('click',page4);
     document.getElementById('nextD').removeEventListener('click',darom2);
+    document.getElementById('toKatalog').removeEventListener('click',page4);
     document.getElementById('page2').style.display = 'none';
     document.getElementById('marhas').style.display = 'none';
     document.getElementById('fireArea').style.display = 'none';
@@ -50,6 +51,7 @@ const page4 = () =>{
     document.getElementById('darom').style.display = 'none';
     document.getElementById('dar1').style.display = 'none';
     document.getElementById('nextD').style.display = 'none';
+    document.getElementById('page3').style.display = 'none';
     document.getElementById('page4').style.display = 'inline';
     document.getElementById('toMarhas').addEventListener('click',marhas);
     document.getElementById('toFArea').addEventListener('click',fireArea);
@@ -71,11 +73,13 @@ const svil = () =>{
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('page3').style.display = 'inline';
+    document.getElementById('toKatalog').addEventListener('click',page4);
 }
 const darom = () =>{
     document.getElementById('toMarhas').removeEventListener('click',marhas);
     document.getElementById('toFArea').removeEventListener('click',fireArea);
     document.getElementById('toDarom').removeEventListener('click',darom);
+    document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('back').removeEventListener('click',darom);
     document.getElementById('nextD2').removeEventListener('click',darom3);
     document.getElementById('page4').style.display = 'none';
@@ -275,6 +279,7 @@ const marhas = () =>{
     document.getElementById('toMarhas').removeEventListener('click',marhas);
     document.getElementById('toFArea').removeEventListener('click',fireArea);
     document.getElementById('toDarom').removeEventListener('click',darom);
+    document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('back').removeEventListener('click',marhas);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('mar2').style.display = 'none';
@@ -704,6 +709,7 @@ const fireArea = () =>{
     document.getElementById('toMarhas').removeEventListener('click',marhas);
     document.getElementById('toFArea').removeEventListener('click',fireArea);
     document.getElementById('toDarom').removeEventListener('click',darom);
+    document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('back').removeEventListener('click',fireArea);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('fA2').style.display = 'none';
