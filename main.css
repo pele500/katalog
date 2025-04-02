@@ -106,7 +106,7 @@
     position: absolute;
     width: 93vw;
     height: 8vh;
-    bottom: 2vh;
+    bottom: 0vh;
     right: 3vw;
 }
 #back{
@@ -449,4 +449,25 @@
     height: 8vh;
     top: 54.6vh;
     right: 51vw;
+}
+#n1{
+    position: absolute;
+    width: 74vw;
+    height: 8vh;
+    top: 26.5vh;
+    right: 13vw; 
+}
+#n2{
+    position: absolute;
+    width: 74vw;
+    height: 8vh;
+    top: 35.5vh;
+    right: 13vw;
+}
+#n3{
+    position: absolute;
+    width: 74vw;
+    height: 8vh;
+    top: 44.5vh;
+    right: 13vw;
 }
