@@ -1,984 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קטלוג האימונים</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
+</head>
 
-// const myFunction = () =>{
-//     var input, filter, ul, li, a, i;
-//     input = document.getElementById('mySearch');
-//     filter = input.value.toUpperCase();
-//     ul = document.getElementById('myMenu');
-//     li = ul.getElementsByTagName('li');
-//     for(i = 0; i<li.length;i++){
-//         a = li[i].getElementsByTagName('a')[0];
-//         if(a.innerHTML.toUpperCase().indexOf(filter)>-1){
-//             li[i].style.display = '';
-//             li[i].style.position = 'absolute';
-//             li[i].style.zIndex = '2';
-//         }else{
-//             li[i].style.position = 'static';
-//             li[i].style.display = 'none';
-//             li[i].style.zIndex = '-2';
-//         }
-//     }
-// }
-window.addEventListener("load", (event) => {
-    let timer = setTimeout(() => {
-        page2();
-    }
-        , 4000);
-})
+<body>
+    <div id="page1" class="bg">
+        <img src="./assets/icons.png" alt="icons" class="icons">
+        <img src="./assets/textP1.png" alt="textP1" id="textP1">
+    </div>
+    <div id="page2" class="pages bg">
+        <img src="./assets/icons.png" alt="icons" class="icons">
+        <img src="./assets/textP2.png" alt="textP2" id="textP2">
+        <img src="./assets/next-01.png" alt="next-01" id="next">
+    </div>
+    <div id="page3" class="pages">
+        <img src="./assets/textP3.png" alt="textP3" id="textP3">
+        <div id="toKatalog"></div>
+    </div>
+    <div id="myTrain" class="pages">
+        <ul id="training"></ul>
+    </div>
+    <div id="page4" class="pages">
+        <!-- <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="..." title="type in a name">
+        <ul id="myMenu">
+            <li class="search"><a href="#">היי</a></li>
+            <li class="search"><a href="#">ביי</a></li>
+            <li class="search"><a href="#">מהה</a></li>
+        </ul> -->
+        <img src="./assets/infos.png" alt="info" id="info">
+        <div id="toMarhas"></div>
+        <div id="toFArea"></div>
+        <div id="toMNorth"></div>
+        <div id="toDarom"></div>
+        <div id="toSvil"></div>
+    </div>
+    <h1 id="back">חזור</h1>
+    <!-- <h1 id="trains">האימון שלי</h1> -->
+    <div id="marhsAdd"></div>
+    <div id="marhas" class="pages">
+        <div id="mar1" class="pages">
+            <img src="./assets/mrhas/page1.png" alt="page1" id="mar1" class="imgs">
+            <div id="marhsK"></div>
+        </div>
+        <div id="mar2" class="pages">
+            <img src="./assets/mrhas/page2.png" alt="page2" id="mar2" class="imgs">
+            <div id="train3"></div>
+            <div id="train4"></div>
+            <div id="train5"></div>
+            <div id="train6"></div>
+            <div id="train7"></div>
+            <div id="train8"></div>
+            <div id="train9"></div>
+            <div id="train10"></div>
+            <div id="train11"></div>
+            <div id="train12"></div>
+            <div id="train13"></div>
+            <div id="train14"></div>
+            <div id="train15"></div>
+        </div>
+        <div id="mar3" class="pages">
+            <img src="./assets/mrhas/page3.png" alt="page3" id="mar3" class="imgs">
+        </div>
+        <div id="mar4" class="pages">
+            <img src="./assets/mrhas/page4.png" alt="page4" id="mar4" class="imgs">
+        </div>
+        <div id="mar5" class="pages">
+            <img src="./assets/mrhas/page5.png" alt="page5" id="mar5" class="imgs">
+        </div>
+        <div id="mar6" class="pages">
+            <img src="./assets/mrhas/page6.png" alt="page6" id="mar6" class="imgs">
+        </div>
+        <div id="mar7" class="pages">
+            <img src="./assets/mrhas/page7.png" alt="page7" id="mar7" class="imgs">
+        </div>
+        <div id="mar8" class="pages">
+            <img src="./assets/mrhas/kures.png" alt="kures" id="kures" class="imgs">
+            <div id="k1"></div>
+            <div id="k2"></div>
+            <div id="k3"></div>
+            <div id="k4"></div>
+        </div>
+        <div id="kures1" class="pages">
+            <img src="./assets/mrhas/page17.png" alt="page17" id="mar17" class="imgs">
+        </div>
+        <div id="kures2" class="pages">
+            <img src="./assets/mrhas/page19.png" alt="page19" id="mar19" class="imgs">
+        </div>
+        <div id="kures3" class="pages">
+            <img src="./assets/mrhas/page18.png" alt="page18" id="mar18" class="imgs">
+        </div>
+        <div id="kures4" class="pages">
+            <img src="./assets/mrhas/page20.png" alt="page20" id="mar20" class="imgs">
+        </div>
+        <div id="mar9" class="pages">
+            <img src="./assets/mrhas/page16.png" alt="page9" id="mar9" class="imgs">
+        </div>
+        <div id="mar10" class="pages">
+            <img src="./assets/mrhas/page11.png" alt="page11" id="mar10" class="imgs">
+        </div>
+        <div id="mar11" class="pages">
+            <img src="./assets/mrhas/page10.png" alt="page11" id="mar11" class="imgs">
+        </div>
+        <div id="mar12" class="pages">
+            <img src="./assets/mrhas/page12.png" alt="page12" id="mar12" class="imgs">
+        </div>
+        <div id="mar13" class="pages">
+            <img src="./assets/mrhas/page8.png" alt="page8" id="mar8" class="imgs">
+        </div>
+        <div id="mar14" class="pages">
+            <img src="./assets/mrhas/page13.png" alt="page13" id="mar13" class="imgs">
+        </div>
+        <div id="mar15" class="pages">
+            <img src="./assets/mrhas/page11.png" alt="page11" id="mar11" class="imgs">
+        </div>
+    </div>
+    <div id="fireArea" class="pages">
+        <div id="fA1">
+            <img src="./assets/fireArea/page1.png" alt="page1" id="fa1" class="imgs">
+            <div id="fireA2"></div>
+            <div id="fireA3"></div>
+            <div id="fireA4"></div>
+            <div id="fireA5"></div>
+            <div id="fireA6"></div>
+            <div id="fireA7"></div>
+            <div id="fireA8"></div>
+            <div id="fireA9"></div>
+            <div id="fireA10"></div>
+            <div id="fireA11"></div>
+            <div id="fireA12"></div>
+        </div>
+        <div id="fA2" class="pages">
+            <img src="./assets/fireArea/page3.png" alt="page2" id="fa2" class="imgs">
+        </div>
+        <div id="fA3" class="pages">
+            <img src="./assets/fireArea/page5.png" alt="page3" id="fa3" class="imgs">
+        </div>
+        <div id="fA4" class="pages">
+            <img src="./assets/fireArea/page7.png" alt="page4" id="fa4" class="imgs">
+        </div>
+        <div id="fA5" class="pages">
+            <img src="./assets/fireArea/page9.png" alt="page5" id="fa5" class="imgs">
+        </div>
+        <div id="fA6" class="pages">
+            <img src="./assets/fireArea/page10.png" alt="page6" id="fa6" class="imgs">
+        </div>
+        <div id="fA7" class="pages">
+            <img src="./assets/fireArea/page2.png" alt="page7" id="fa7" class="imgs">
+        </div>
+        <div id="fA8" class="pages">
+            <img src="./assets/fireArea/page4.png" alt="page8" id="fa8" class="imgs">
+        </div>
+        <div id="fA9" class="pages">
+            <img src="./assets/fireArea/page6.png" alt="page9" id="fa9" class="imgs">
+        </div>
+        <div id="fA10" class="pages">
+            <img src="./assets/fireArea/page8.png" alt="page10" id="fa10" class="imgs">
+        </div>
+        <div id="fA11" class="pages">
+            <img src="./assets/fireArea/page11.png" alt="page11" id="fa11" class="imgs">
+        </div>
+        <div id="fA12" class="pages">
+            <img src="./assets/fireArea/page12.png" alt="page12" id="fa12" class="imgs">
+        </div>
+    </div>
+    <div id="marcasNorth" class="pages">
+        <div id="north1" class="pages">
+            <img src="./assets/north/page1.png" alt="page1" class="imgs">
+            <div id="n1"></div>
+            <div id="n2"></div>
+            <div id="n3"></div>
+        </div>
+        <div id="north2" class="pages">
+            <img src="./assets/north/n1.png" alt="n1" id="nor1" class="imgs">
+        </div>
+        <div id="north3" class="pages">
+            <img src="./assets/north/n2.png" alt="n2" id="nor2" class="imgs">
+        </div>
+        <div id="north4" class="pages">
+            <img src="./assets/north/n3.png" alt="n3" id="nor3" class="imgs">
+        </div>
+    </div>
+    <div id="darom" class="pages">
+        <div id="dar1" class="pages">
+            <img src="./assets/darom/page1.png" alt="page1" id="dar1" class="imgs">
+            <div id="nextD"></div>
+        </div>
+        <div id="dar2" class="pages">
+            <img src="./assets/darom/page2.png" alt="page2" id="dar2" class="imgs">
+            <div id="nextD2"></div>
+        </div>
+        <div id="dar3" class="pages">
+            <img src="./assets/darom/page3.png" alt="page3" id="dar3" class="imgs">
+            <div id="darom1"></div>
+            <div id="darom2"></div>
+            <div id="darom3"></div>
+            <div id="darom4"></div>
+        </div>
+    </div>
+    <div id="mikzoaot" class="pages">
+        <div id="mik1" class="pages">
+            <img src="./assets/mikzoaot/page1.png" alt="page1" id="mik1" class="imgs">
+            <div id="mikz1"></div>
+            <div id="mikz2"></div>
+            <div id="mikz3"></div>
+            <div id="mikz4"></div>
+            <div id="mikz5"></div>
+            <div id="mikz6"></div>
+            <div id="mikz7"></div>
+        </div>
+        <div id="mik2" class="pages">
+            <img src="./assets/mikzoaot/page2.png" alt="page2" id="mik2" class="imgs">
+        </div>
+        <div id="mik3" class="pages">
+            <img src="./assets/mikzoaot/page4.png" alt="page3" id="mik3" class="imgs">
+        </div>
+        <div id="mik4" class="pages">
+            <img src="./assets/mikzoaot/page6.png" alt="page4" id="mik4" class="imgs">
+        </div>
+        <div id="mik5" class="pages">
+            <img src="./assets/mikzoaot/page8.png" alt="page5" id="mik5" class="imgs">
+        </div>
+        <div id="mik6" class="pages">
+            <img src="./assets/mikzoaot/page3.png" alt="page6" id="mik6" class="imgs">
+        </div>
+        <div id="mik7" class="pages">
+            <img src="./assets/mikzoaot/page5.png" alt="page7" id="mik7" class="imgs">
+        </div>
+        <div id="mik8" class="pages">
+            <img src="./assets/mikzoaot/page7.png" alt="page8" id="mik8" class="imgs">
+        </div>
+    </div>
+</body>
 
-const page2 = () =>{
-    document.getElementById('page1').style.display = 'none';
-    document.getElementById('page2').style.display = 'inline';
-    document.getElementById('next').addEventListener('click',page4);
-}
-const page3 = () =>{
-    document.getElementById('next').removeEventListener('click',page3);
-    document.getElementById('page2').style.display = 'none';
-    document.getElementById('page3').style.display = 'inline';
-    document.getElementById('toKatalog').addEventListener('click',page4);
-}
-const page4 = () =>{
-    document.getElementById('next').removeEventListener('click',page4);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('nextD').removeEventListener('click',darom2);
-    document.getElementById('toKatalog').removeEventListener('click',page4);
-    document.getElementById('page2').style.display = 'none';
-    document.getElementById('marhas').style.display = 'none';
-    document.getElementById('fireArea').style.display = 'none';
-    document.getElementById('back').style.display = 'none';
-    // document.getElementById('trains').style.display = 'none';
-    document.getElementById('mar1').style.display = 'none';
-    document.getElementById('darom').style.display = 'none';
-    document.getElementById('dar1').style.display = 'none';
-    document.getElementById('nextD').style.display = 'none';
-    document.getElementById('page3').style.display = 'none';
-    document.getElementById('page4').style.display = 'inline';
-    document.getElementById('toMarhas').addEventListener('click',marhas);
-    document.getElementById('toFArea').addEventListener('click',fireArea);
-    document.getElementById('toDarom').addEventListener('click',darom);
-    document.getElementById('toSvil').addEventListener('click',svil);
-    // document.getElementById('trains').addEventListener('click',seeTrain);
-}
-const seeTrain = () =>{
-    document.getElementById('page4').style.display = 'none';
-}
-function addTrain (name){
-    console.log(name);
-    document.getElementById('training').innerHTML += `<li>${name}</li>`;
-}
-const svil = () =>{
-    document.getElementById('toMarhas').removeEventListener('click',marhas);
-    document.getElementById('toFArea').removeEventListener('click',fireArea);
-    document.getElementById('toDarom').removeEventListener('click',darom);
-    document.getElementById('toSvil').removeEventListener('click',svil);
-    document.getElementById('page4').style.display = 'none';
-    document.getElementById('page3').style.display = 'inline';
-    document.getElementById('toKatalog').addEventListener('click',page4);
-}
-const darom = () =>{
-    document.getElementById('toMarhas').removeEventListener('click',marhas);
-    document.getElementById('toFArea').removeEventListener('click',fireArea);
-    document.getElementById('toDarom').removeEventListener('click',darom);
-    document.getElementById('toSvil').removeEventListener('click',svil);
-    document.getElementById('back').removeEventListener('click',darom);
-    document.getElementById('nextD2').removeEventListener('click',darom3);
-    document.getElementById('page4').style.display = 'none';
-    document.getElementById('dar2').style.display = 'none';
-    document.getElementById('darom').style.display = 'inline';
-    document.getElementById('dar1').style.display = 'inline';
-    document.getElementById('nextD').style.display = 'inline';
-    document.getElementById('back').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',page4);
-    document.getElementById('nextD').addEventListener('click',darom2);
-}
-const darom2 = () =>{
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('nextD').removeEventListener('click',darom2);
-    document.getElementById('back').removeEventListener('click',darom2);
-    document.getElementById('dar1').style.display = 'none';
-    document.getElementById('nextD').style.display = 'none';
-    document.getElementById('dar3').style.display = 'none';
-    document.getElementById('nextD2').style.display = 'inline';
-    document.getElementById('dar2').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',darom);
-    document.getElementById('nextD2').addEventListener('click',darom3);
-} 
-const darom3 = () =>{
-    document.getElementById('back').removeEventListener('click',darom);
-    document.getElementById('nextD2').removeEventListener('click',darom3);
-    document.getElementById('back').removeEventListener('click',darom3);
-    document.getElementById('mikz1').removeEventListener('click',mikzoaot2);
-    document.getElementById('mikz2').removeEventListener('click',mikzoaot3);
-    document.getElementById('mikz3').removeEventListener('click',mikzoaot4);
-    document.getElementById('mikz4').removeEventListener('click',mikzoaot5);
-    document.getElementById('mikz5').removeEventListener('click',mikzoaot6);
-    document.getElementById('mikz6').removeEventListener('click',mikzoaot7);
-    document.getElementById('mikz7').removeEventListener('click',mikzoaot8);
-    document.getElementById('darom').style.display = 'inline'; 
-    document.getElementById('nextD2').style.display = 'none';
-    document.getElementById('dar2').style.display = 'none';
-    document.getElementById('mikzoaot').style.display = 'none';
-    document.getElementById('mik1').style.display = 'none';
-    document.getElementById('dar3').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',darom2);
-    document.getElementById('darom4').addEventListener('click',mikzoaot);
-}
-const mikzoaot = () =>{
-    document.getElementById('back').removeEventListener('click',darom2);
-    document.getElementById('darom4').removeEventListener('click',mikzoaot);
-    document.getElementById('back').removeEventListener('click',mikzoaot);
-    document.getElementById('darom').style.display = 'none'; 
-    document.getElementById('mik2').style.display = 'none';
-    document.getElementById('mik3').style.display = 'none';
-    document.getElementById('mik4').style.display = 'none';
-    document.getElementById('mik5').style.display = 'none';
-    document.getElementById('mik6').style.display = 'none';
-    document.getElementById('mik7').style.display = 'none';
-    document.getElementById('mik8').style.display = 'none';
-    document.getElementById('marhsAdd').style.display = 'none';
-    // document.getElementById('back').style.display = 'inline';
-    // document.getElementById('trains').style.display = 'inline';
-    document.getElementById('mikzoaot').style.display = 'inline';
-    document.getElementById('mik1').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',darom3);
-    document.getElementById('mikz1').addEventListener('click',mikzoaot2);
-    document.getElementById('mikz2').addEventListener('click',mikzoaot3);
-    document.getElementById('mikz3').addEventListener('click',mikzoaot4);
-    document.getElementById('mikz4').addEventListener('click',mikzoaot5);
-    document.getElementById('mikz5').addEventListener('click',mikzoaot6);
-    document.getElementById('mikz6').addEventListener('click',mikzoaot7);
-    document.getElementById('mikz7').addEventListener('click',mikzoaot8);
-}
-const mikzoaot2 = () =>{
-    document.getElementById('back').removeEventListener('click',darom3);
-    document.getElementById('mikz1').removeEventListener('click',mikzoaot2);
-    document.getElementById('mikz2').removeEventListener('click',mikzoaot3);
-    document.getElementById('mikz3').removeEventListener('click',mikzoaot4);
-    document.getElementById('mikz4').removeEventListener('click',mikzoaot5);
-    document.getElementById('mikz5').removeEventListener('click',mikzoaot6);
-    document.getElementById('mikz6').removeEventListener('click',mikzoaot7);
-    document.getElementById('mikz7').removeEventListener('click',mikzoaot8);
-    document.getElementById('mik1').style.display = 'none';
-    document.getElementById('mik2').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',mikzoaot);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מגמת קליעה');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const mikzoaot3 = () =>{
-    document.getElementById('back').removeEventListener('click',darom3);
-    document.getElementById('mikz1').removeEventListener('click',mikzoaot2);
-    document.getElementById('mikz2').removeEventListener('click',mikzoaot3);
-    document.getElementById('mikz3').removeEventListener('click',mikzoaot4);
-    document.getElementById('mikz4').removeEventListener('click',mikzoaot5);
-    document.getElementById('mikz5').removeEventListener('click',mikzoaot6);
-    document.getElementById('mikz6').removeEventListener('click',mikzoaot7);
-    document.getElementById('mikz7').removeEventListener('click',mikzoaot8);
-    document.getElementById('mik1').style.display = 'none';
-    document.getElementById('mik3').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',mikzoaot);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מגמת נמ"ח');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const mikzoaot4 = () =>{
-    document.getElementById('back').removeEventListener('click',darom3);
-    document.getElementById('mikz1').removeEventListener('click',mikzoaot2);
-    document.getElementById('mikz2').removeEventListener('click',mikzoaot3);
-    document.getElementById('mikz3').removeEventListener('click',mikzoaot4);
-    document.getElementById('mikz4').removeEventListener('click',mikzoaot5);
-    document.getElementById('mikz5').removeEventListener('click',mikzoaot6);
-    document.getElementById('mikz6').removeEventListener('click',mikzoaot7);
-    document.getElementById('mikz7').removeEventListener('click',mikzoaot8);
-    document.getElementById('mik1').style.display = 'none';
-    document.getElementById('mik4').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',mikzoaot);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מגמת מרגמות');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const mikzoaot5 = () =>{
-    document.getElementById('back').removeEventListener('click',darom3);
-    document.getElementById('mikz1').removeEventListener('click',mikzoaot2);
-    document.getElementById('mikz2').removeEventListener('click',mikzoaot3);
-    document.getElementById('mikz3').removeEventListener('click',mikzoaot4);
-    document.getElementById('mikz4').removeEventListener('click',mikzoaot5);
-    document.getElementById('mikz5').removeEventListener('click',mikzoaot6);
-    document.getElementById('mikz6').removeEventListener('click',mikzoaot7);
-    document.getElementById('mikz7').removeEventListener('click',mikzoaot8);
-    document.getElementById('mik1').style.display = 'none';
-    document.getElementById('mik5').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',mikzoaot);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מגמת נגמשים');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const mikzoaot6 = () =>{
-    document.getElementById('back').removeEventListener('click',darom3);
-    document.getElementById('mikz1').removeEventListener('click',mikzoaot2);
-    document.getElementById('mikz2').removeEventListener('click',mikzoaot3);
-    document.getElementById('mikz3').removeEventListener('click',mikzoaot4);
-    document.getElementById('mikz4').removeEventListener('click',mikzoaot5);
-    document.getElementById('mikz5').removeEventListener('click',mikzoaot6);
-    document.getElementById('mikz6').removeEventListener('click',mikzoaot7);
-    document.getElementById('mikz7').removeEventListener('click',mikzoaot8);
-    document.getElementById('mik1').style.display = 'none';
-    document.getElementById('mik6').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',mikzoaot);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מגמת צלפים');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const mikzoaot7 = () =>{
-    document.getElementById('back').removeEventListener('click',darom3);
-    document.getElementById('mikz1').removeEventListener('click',mikzoaot2);
-    document.getElementById('mikz2').removeEventListener('click',mikzoaot3);
-    document.getElementById('mikz3').removeEventListener('click',mikzoaot4);
-    document.getElementById('mikz4').removeEventListener('click',mikzoaot5);
-    document.getElementById('mikz5').removeEventListener('click',mikzoaot6);
-    document.getElementById('mikz6').removeEventListener('click',mikzoaot7);
-    document.getElementById('mikz7').removeEventListener('click',mikzoaot8);
-    document.getElementById('mik1').style.display = 'none';
-    document.getElementById('mik7').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',mikzoaot);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מגמת רתק');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const mikzoaot8 = () =>{
-    document.getElementById('back').removeEventListener('click',darom3);
-    document.getElementById('mikz1').removeEventListener('click',mikzoaot2);
-    document.getElementById('mikz2').removeEventListener('click',mikzoaot3);
-    document.getElementById('mikz3').removeEventListener('click',mikzoaot4);
-    document.getElementById('mikz4').removeEventListener('click',mikzoaot5);
-    document.getElementById('mikz5').removeEventListener('click',mikzoaot6);
-    document.getElementById('mikz6').removeEventListener('click',mikzoaot7);
-    document.getElementById('mikz7').removeEventListener('click',mikzoaot8);
-    document.getElementById('mik1').style.display = 'none';
-    document.getElementById('mik8').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',mikzoaot);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מגמת אוהד');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const marhas = () =>{
-    document.getElementById('toMarhas').removeEventListener('click',marhas);
-    document.getElementById('toFArea').removeEventListener('click',fireArea);
-    document.getElementById('toDarom').removeEventListener('click',darom);
-    document.getElementById('toSvil').removeEventListener('click',svil);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('page4').style.display = 'none';
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('back').style.display = 'inline';
-    document.getElementById('marhas').style.display = 'inline';
-    document.getElementById('mar1').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',page4);
-    document.getElementById('marhsK').addEventListener('click',marhas2);
-}
-const marhas2 = () =>{
-    document.getElementById('marhsK').removeEventListener('click',marhas2);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('back').removeEventListener('click',marhas2);
-    document.getElementById('k1').removeEventListener('click',kurs1);
-    document.getElementById('k2').removeEventListener('click',kurs2);
-    document.getElementById('k3').removeEventListener('click',kurs3);
-    document.getElementById('k4').removeEventListener('click',kurs4);
-    document.getElementById('mar1').style.display = 'none';
-    document.getElementById('mar3').style.display = 'none';
-    document.getElementById('mar4').style.display = 'none';
-    document.getElementById('mar5').style.display = 'none';
-    document.getElementById('mar6').style.display = 'none';
-    document.getElementById('mar7').style.display = 'none';
-    document.getElementById('mar8').style.display = 'none';
-    document.getElementById('mar9').style.display = 'none';
-    document.getElementById('mar10').style.display = 'none';
-    document.getElementById('mar11').style.display = 'none';
-    document.getElementById('mar12').style.display = 'none';
-    document.getElementById('mar13').style.display = 'none';
-    document.getElementById('mar14').style.display = 'none';
-    document.getElementById('mar15').style.display = 'none';
-    document.getElementById('marhsAdd').style.display = 'none';
-    document.getElementById('mar2').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas);
-    document.getElementById('train3').addEventListener('click',marhas3);
-    document.getElementById('train4').addEventListener('click',marhas4);
-    document.getElementById('train5').addEventListener('click',marhas5);
-    document.getElementById('train6').addEventListener('click',marhas6);
-    document.getElementById('train7').addEventListener('click',marhas7);
-    document.getElementById('train8').addEventListener('click',marhas8);
-    document.getElementById('train9').addEventListener('click',marhas9);
-    document.getElementById('train10').addEventListener('click',marhas10);
-    document.getElementById('train11').addEventListener('click',marhas11);
-    document.getElementById('train12').addEventListener('click',marhas12);
-    document.getElementById('train13').addEventListener('click',marhas13);
-    document.getElementById('train14').addEventListener('click',marhas14);
-    document.getElementById('train15').addEventListener('click',marhas15);
-}
-const marhas3 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar3').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מכין לחימה');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const marhas4 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar4').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מפג"ד');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas5 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar5').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מחס"ר');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas6 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar6').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון סוללה');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas7 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar7').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון פרט');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas8 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas8);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('kures1').style.display = 'none';
-    document.getElementById('kures2').style.display = 'none';
-    document.getElementById('kures3').style.display = 'none';
-    document.getElementById('kures4').style.display = 'none';
-    document.getElementById('marhsAdd').style.display = 'none';
-    document.getElementById('mar8').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('k1').addEventListener('click',kurs1);
-    document.getElementById('k2').addEventListener('click',kurs2);
-    document.getElementById('k3').addEventListener('click',kurs3);
-    document.getElementById('k4').addEventListener('click',kurs4);
-}
-const kurs1 = () =>{
-    document.getElementById('back').removeEventListener('click',marhas2);
-    document.getElementById('k1').removeEventListener('click',kurs1);
-    document.getElementById('k2').removeEventListener('click',kurs2);
-    document.getElementById('k3').removeEventListener('click',kurs3);
-    document.getElementById('k4').removeEventListener('click',kurs4);
-    document.getElementById('mar8').style.display = 'none';
-    document.getElementById('kures1').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas8);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מס"ח');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const kurs2 = () =>{
-    document.getElementById('back').removeEventListener('click',marhas2);
-    document.getElementById('k1').removeEventListener('click',kurs1);
-    document.getElementById('k2').removeEventListener('click',kurs2);
-    document.getElementById('k3').removeEventListener('click',kurs3);
-    document.getElementById('k4').removeEventListener('click',kurs4);
-    document.getElementById('mar8').style.display = 'none';
-    document.getElementById('kures2').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas8);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('קורס נגדי סיוע');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const kurs3 = () =>{
-    document.getElementById('back').removeEventListener('click',marhas2);
-    document.getElementById('k1').removeEventListener('click',kurs1);
-    document.getElementById('k2').removeEventListener('click',kurs2);
-    document.getElementById('k3').removeEventListener('click',kurs3);
-    document.getElementById('k4').removeEventListener('click',kurs4);
-    document.getElementById('mar8').style.display = 'none';
-    document.getElementById('kures3').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas8);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('קורס קמבצ"י סיוע');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const kurs4 = () =>{
-    document.getElementById('back').removeEventListener('click',marhas2);
-    document.getElementById('k1').removeEventListener('click',kurs1);
-    document.getElementById('k2').removeEventListener('click',kurs2);
-    document.getElementById('k3').removeEventListener('click',kurs3);
-    document.getElementById('k4').removeEventListener('click',kurs4);
-    document.getElementById('mar8').style.display = 'none';
-    document.getElementById('kures4').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas8);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('קורס מפקדי מכלול');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas9 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar9').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון מכלול אחוד מלא');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas10 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar10').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון אימון מכלול כחלק מאימון מכין');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas11 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar11').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון צימודים');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas12 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar12').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון שמירת כשרות למפקדים');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas13 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar13').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון קש"אים/ קס"גים');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas14 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar14').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון פלת"צ');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const marhas15 = () =>{
-    document.getElementById('train3').removeEventListener('click',marhas3);
-    document.getElementById('train4').removeEventListener('click',marhas4);
-    document.getElementById('train5').removeEventListener('click',marhas5);
-    document.getElementById('train6').removeEventListener('click',marhas6);
-    document.getElementById('train7').removeEventListener('click',marhas7);
-    document.getElementById('train8').removeEventListener('click',marhas8);
-    document.getElementById('train9').removeEventListener('click',marhas9);
-    document.getElementById('train10').removeEventListener('click',marhas10);
-    document.getElementById('train11').removeEventListener('click',marhas11);
-    document.getElementById('train12').removeEventListener('click',marhas12);
-    document.getElementById('train13').removeEventListener('click',marhas13);
-    document.getElementById('train14').removeEventListener('click',marhas14);
-    document.getElementById('train15').removeEventListener('click',marhas15);
-    document.getElementById('back').removeEventListener('click',marhas);
-    document.getElementById('mar2').style.display = 'none';
-    document.getElementById('mar15').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',marhas2);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('אימון חניכת ציר האש בתרח"ט/ תרג"ד');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    }); 
-}
-const fireArea = () =>{
-    document.getElementById('toMarhas').removeEventListener('click',marhas);
-    document.getElementById('toFArea').removeEventListener('click',fireArea);
-    document.getElementById('toDarom').removeEventListener('click',darom);
-    document.getElementById('toSvil').removeEventListener('click',svil);
-    document.getElementById('back').removeEventListener('click',fireArea);
-    document.getElementById('page4').style.display = 'none';
-    document.getElementById('fA2').style.display = 'none';
-    document.getElementById('fA3').style.display = 'none';
-    document.getElementById('fA4').style.display = 'none';
-    document.getElementById('fA5').style.display = 'none';
-    document.getElementById('fA6').style.display = 'none';
-    document.getElementById('fA7').style.display = 'none';
-    document.getElementById('fA8').style.display = 'none';
-    document.getElementById('fA9').style.display = 'none';
-    document.getElementById('fA10').style.display = 'none';
-    document.getElementById('fA11').style.display = 'none';
-    document.getElementById('fA12').style.display = 'none';
-    document.getElementById('marhsAdd').style.display = 'none';
-    document.getElementById('back').style.display = 'inline';
-    document.getElementById('fA1').style.display = 'inline';
-    document.getElementById('fireArea').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',page4);
-    document.getElementById('fireA2').addEventListener('click',fireArea2);
-    document.getElementById('fireA3').addEventListener('click',fireArea3);
-    document.getElementById('fireA4').addEventListener('click',fireArea4);
-    document.getElementById('fireA5').addEventListener('click',fireArea5);
-    document.getElementById('fireA6').addEventListener('click',fireArea6);
-    document.getElementById('fireA7').addEventListener('click',fireArea7);
-    document.getElementById('fireA8').addEventListener('click',fireArea8);
-    document.getElementById('fireA9').addEventListener('click',fireArea9);
-    document.getElementById('fireA10').addEventListener('click',fireArea10);
-    document.getElementById('fireA11').addEventListener('click',fireArea11);
-    document.getElementById('fireA12').addEventListener('click',fireArea12);
-}
-const fireArea2 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-    document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA2').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן רותם');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const fireArea3 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-    document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA3').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן רותם דרום');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const fireArea4 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-        document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA4').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן מבודדת');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const fireArea5 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-        document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA5').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן אריאל א');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const fireArea6 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-        document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA6').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן אריאל ב');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const fireArea7 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-        document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA7').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן מאלא');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const fireArea8 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-        document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA8').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן רותם מערב');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const fireArea9 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-        document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA9').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן שיקגו');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const fireArea10 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-        document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA10').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן דנילוב');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const fireArea11 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-        document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA11').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן לבנון');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
-const fireArea12 = () =>{
-    document.getElementById('fireA2').removeEventListener('click',fireArea2);
-        document.getElementById('fireA3').removeEventListener('click',fireArea3);
-    document.getElementById('fireA4').removeEventListener('click',fireArea4);
-    document.getElementById('fireA5').removeEventListener('click',fireArea5);
-    document.getElementById('fireA6').removeEventListener('click',fireArea6);
-    document.getElementById('fireA7').removeEventListener('click',fireArea7);
-    document.getElementById('fireA8').removeEventListener('click',fireArea8);
-    document.getElementById('fireA9').removeEventListener('click',fireArea9);
-    document.getElementById('fireA10').removeEventListener('click',fireArea10);
-    document.getElementById('fireA11').removeEventListener('click',fireArea11);
-    document.getElementById('fireA12').removeEventListener('click',fireArea12);
-    document.getElementById('back').removeEventListener('click',page4);
-    document.getElementById('fA1').style.display = 'none';
-    document.getElementById('fA12').style.display = 'inline';
-    document.getElementById('marhsAdd').style.display = 'inline';
-    document.getElementById('back').addEventListener('click',fireArea);
-    document.getElementById('marhsAdd').addEventListener('click',function(){
-        addTrain('מתקן בראשית');
-        document.getElementById('marhsAdd').removeEventListener('click',arguments.callee);
-    });
-}
+</html>
