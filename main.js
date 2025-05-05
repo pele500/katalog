@@ -42,6 +42,24 @@ const page4 = () =>{
     document.getElementById('back').removeEventListener('click',page4);
     document.getElementById('nextD').removeEventListener('click',darom2);
     document.getElementById('toKatalog').removeEventListener('click',page4);
+    document.getElementById('n1').removeEventListener('click',Nhir);
+    document.getElementById('n2').removeEventListener('click',Nsir);
+    document.getElementById('n3').removeEventListener('click',Nlev);
+    document.getElementById('mha1').removeEventListener('click',mhal2);
+    document.getElementById('mha2').removeEventListener('click',mhal3);
+    document.getElementById('mha3').removeEventListener('click',mhal4);
+    document.getElementById('marhsK').removeEventListener('click',marhas2);
+    document.getElementById('fireA2').removeEventListener('click',fireArea2);
+    document.getElementById('fireA3').removeEventListener('click',fireArea3);
+    document.getElementById('fireA4').removeEventListener('click',fireArea4);
+    document.getElementById('fireA5').removeEventListener('click',fireArea5);
+    document.getElementById('fireA6').removeEventListener('click',fireArea6);
+    document.getElementById('fireA7').removeEventListener('click',fireArea7);
+    document.getElementById('fireA8').removeEventListener('click',fireArea8);
+    document.getElementById('fireA9').removeEventListener('click',fireArea9);
+    document.getElementById('fireA10').removeEventListener('click',fireArea10);
+    document.getElementById('fireA11').removeEventListener('click',fireArea11);
+    document.getElementById('fireA12').removeEventListener('click',fireArea12);
     document.getElementById('page2').style.display = 'none';
     document.getElementById('marhas').style.display = 'none';
     document.getElementById('fireArea').style.display = 'none';
@@ -53,12 +71,15 @@ const page4 = () =>{
     document.getElementById('nextD').style.display = 'none';
     document.getElementById('marcasNorth').style.display = 'none';
     document.getElementById('north1').style.display = 'none';
+    document.getElementById('mal').style.display = 'none';
+    document.getElementById('mal1').style.display = 'none';
     document.getElementById('page3').style.display = 'none';
     document.getElementById('page4').style.display = 'inline';
     document.getElementById('toMarhas').addEventListener('click',marhas);
     document.getElementById('toFArea').addEventListener('click',fireArea);
     document.getElementById('toDarom').addEventListener('click',darom);
     document.getElementById('toMNorth').addEventListener('click',north);
+    document.getElementById('toMhal').addEventListener('click',mhal);
     document.getElementById('toSvil').addEventListener('click',svil);
     // document.getElementById('trains').addEventListener('click',seeTrain);
 }
@@ -69,11 +90,270 @@ function addTrain (name){
     console.log(name);
     document.getElementById('training').innerHTML += `<li>${name}</li>`;
 }
+const mhal = () =>{
+    document.getElementById('toMarhas').removeEventListener('click',marhas);
+    document.getElementById('toFArea').removeEventListener('click',fireArea);
+    document.getElementById('toDarom').removeEventListener('click',darom);
+    document.getElementById('toMNorth').removeEventListener('click',north);
+    document.getElementById('toMhal').removeEventListener('click',mhal);
+    document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('gd1').removeEventListener('click',gdudM1);
+    document.getElementById('gd2').removeEventListener('click',gdudM2);
+    document.getElementById('gd3').removeEventListener('click',gdudM3);
+    document.getElementById('gd4').removeEventListener('click',gdudM4);
+    document.getElementById('gd5').removeEventListener('click',gdudM5);
+    document.getElementById('gd6').removeEventListener('click',gdudM6);
+    document.getElementById('hat1').removeEventListener('click',hatM1);
+    document.getElementById('hat2').removeEventListener('click',hatM2);
+    document.getElementById('hat3').removeEventListener('click',hatM3);
+    document.getElementById('hat4').removeEventListener('click',hatM4);
+    document.getElementById('hat5').removeEventListener('click',hatM5);
+    document.getElementById('hat6').removeEventListener('click',hatM6);
+    document.getElementById('hat7').removeEventListener('click',hatM7);
+    document.getElementById('page4').style.display = 'none';
+    document.getElementById('mal2').style.display = 'none';
+    document.getElementById('mal3').style.display = 'none';
+    document.getElementById('mal4').style.display = 'none';
+    document.getElementById('mal').style.display = 'inline';
+    document.getElementById('mal1').style.display = 'inline';
+    document.getElementById('back').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',page4);
+    document.getElementById('mha1').addEventListener('click',mhal2);
+    document.getElementById('mha2').addEventListener('click',mhal3);
+    document.getElementById('mha3').addEventListener('click',mhal4);
+}
+const mhal2 = () =>{
+    document.getElementById('mha1').removeEventListener('click',mhal2);
+    document.getElementById('mha2').removeEventListener('click',mhal3);
+    document.getElementById('mha3').removeEventListener('click',mhal4);
+    document.getElementById('back').removeEventListener('click',page4);
+    document.getElementById('back').removeEventListener('click',mhal2);
+    document.getElementById('mal5').style.display = 'none';
+    document.getElementById('mal6').style.display = 'none';
+    document.getElementById('mal7').style.display = 'none';
+    document.getElementById('mal8').style.display = 'none';
+    document.getElementById('mal9').style.display = 'none';
+    document.getElementById('mal10').style.display = 'none';
+    document.getElementById('mal11').style.display = 'none';
+    document.getElementById('mal12').style.display = 'none';
+    document.getElementById('mal13').style.display = 'none';
+    document.getElementById('mal1').style.display = 'none';
+    document.getElementById('mal2').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal);
+    document.getElementById('gd1').addEventListener('click',gdudM1);
+    document.getElementById('gd2').addEventListener('click',gdudM2);
+    document.getElementById('gd3').addEventListener('click',gdudM3);
+    // document.getElementById('gd4').addEventListener('click',gdudM4);
+    document.getElementById('gd5').addEventListener('click',gdudM5);
+    document.getElementById('gd6').addEventListener('click',gdudM6);
+}
+const gdudM1 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('gd1').removeEventListener('click',gdudM1);
+    document.getElementById('gd2').removeEventListener('click',gdudM2);
+    document.getElementById('gd3').removeEventListener('click',gdudM3);
+    document.getElementById('gd4').removeEventListener('click',gdudM4);
+    document.getElementById('gd5').removeEventListener('click',gdudM5);
+    document.getElementById('gd6').removeEventListener('click',gdudM6);
+    document.getElementById('mal2').style.display = 'none';
+    document.getElementById('mal5').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal2);
+}
+const gdudM2 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('gd1').removeEventListener('click',gdudM1);
+    document.getElementById('gd2').removeEventListener('click',gdudM2);
+    document.getElementById('gd3').removeEventListener('click',gdudM3);
+    document.getElementById('gd4').removeEventListener('click',gdudM4);
+    document.getElementById('gd5').removeEventListener('click',gdudM5);
+    document.getElementById('gd6').removeEventListener('click',gdudM6);
+    document.getElementById('mal2').style.display = 'none';
+    document.getElementById('mal11').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal2);
+}
+const gdudM3 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('gd1').removeEventListener('click',gdudM1);
+    document.getElementById('gd2').removeEventListener('click',gdudM2);
+    document.getElementById('gd3').removeEventListener('click',gdudM3);
+    document.getElementById('gd4').removeEventListener('click',gdudM4);
+    document.getElementById('gd5').removeEventListener('click',gdudM5);
+    document.getElementById('gd6').removeEventListener('click',gdudM6);
+    document.getElementById('mal2').style.display = 'none';
+    document.getElementById('mal8').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal2);
+}
+const gdudM4 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('gd1').removeEventListener('click',gdudM1);
+    document.getElementById('gd2').removeEventListener('click',gdudM2);
+    document.getElementById('gd3').removeEventListener('click',gdudM3);
+    document.getElementById('gd4').removeEventListener('click',gdudM4);
+    document.getElementById('gd5').removeEventListener('click',gdudM5);
+    document.getElementById('gd6').removeEventListener('click',gdudM6);
+    document.getElementById('mal2').style.display = 'none';
+    document.getElementById('mal8').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal2);
+}
+const gdudM5 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('gd1').removeEventListener('click',gdudM1);
+    document.getElementById('gd2').removeEventListener('click',gdudM2);
+    document.getElementById('gd3').removeEventListener('click',gdudM3);
+    document.getElementById('gd4').removeEventListener('click',gdudM4);
+    document.getElementById('gd5').removeEventListener('click',gdudM5);
+    document.getElementById('gd6').removeEventListener('click',gdudM6);
+    document.getElementById('mal2').style.display = 'none';
+    document.getElementById('mal7').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal2);
+}
+const gdudM6 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('gd1').removeEventListener('click',gdudM1);
+    document.getElementById('gd2').removeEventListener('click',gdudM2);
+    document.getElementById('gd3').removeEventListener('click',gdudM3);
+    document.getElementById('gd4').removeEventListener('click',gdudM4);
+    document.getElementById('gd5').removeEventListener('click',gdudM5);
+    document.getElementById('gd6').removeEventListener('click',gdudM6);
+    document.getElementById('mal2').style.display = 'none';
+    document.getElementById('mal6').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal2);
+}
+const mhal3 = () =>{
+    document.getElementById('mha1').removeEventListener('click',mhal2);
+    document.getElementById('mha2').removeEventListener('click',mhal3);
+    document.getElementById('mha3').removeEventListener('click',mhal4);
+    document.getElementById('back').removeEventListener('click',page4);
+    document.getElementById('back').removeEventListener('click',mhal3);
+    document.getElementById('mal5').style.display = 'none';
+    document.getElementById('mal6').style.display = 'none';
+    document.getElementById('mal7').style.display = 'none';
+    document.getElementById('mal8').style.display = 'none';
+    document.getElementById('mal9').style.display = 'none';
+    document.getElementById('mal10').style.display = 'none';
+    document.getElementById('mal11').style.display = 'none';
+    document.getElementById('mal12').style.display = 'none';
+    document.getElementById('mal13').style.display = 'none';
+    document.getElementById('mal1').style.display = 'none';
+    document.getElementById('mal2').style.display = 'inline';
+    document.getElementById('mal1').style.display = 'none';
+    document.getElementById('mal3').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal);
+    document.getElementById('hat1').addEventListener('click',hatM1);
+    document.getElementById('hat2').addEventListener('click',hatM2);
+    // document.getElementById('hat3').addEventListener('click',hatM3);
+    document.getElementById('hat4').addEventListener('click',hatM4);
+    document.getElementById('hat5').addEventListener('click',hatM5);
+    document.getElementById('hat6').addEventListener('click',hatM6);
+    document.getElementById('hat7').addEventListener('click',hatM7);
+}
+const hatM1 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('hat1').removeEventListener('click',hatM1);
+    document.getElementById('hat2').removeEventListener('click',hatM2);
+    document.getElementById('hat3').removeEventListener('click',hatM3);
+    document.getElementById('hat4').removeEventListener('click',hatM4);
+    document.getElementById('hat5').removeEventListener('click',hatM5);
+    document.getElementById('hat6').removeEventListener('click',hatM6);
+    document.getElementById('hat7').removeEventListener('click',hatM7);
+    document.getElementById('mal3').style.display = 'none';
+    document.getElementById('mal9').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal3);
+}
+const hatM2 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('hat1').removeEventListener('click',hatM1);
+    document.getElementById('hat2').removeEventListener('click',hatM2);
+    document.getElementById('hat3').removeEventListener('click',hatM3);
+    document.getElementById('hat4').removeEventListener('click',hatM4);
+    document.getElementById('hat5').removeEventListener('click',hatM5);
+    document.getElementById('hat6').removeEventListener('click',hatM6);
+    document.getElementById('hat7').removeEventListener('click',hatM7);
+    document.getElementById('mal3').style.display = 'none';
+    document.getElementById('mal10').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal3);
+}
+const hatM3 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('hat1').removeEventListener('click',hatM1);
+    document.getElementById('hat2').removeEventListener('click',hatM2);
+    document.getElementById('hat3').removeEventListener('click',hatM3);
+    document.getElementById('hat4').removeEventListener('click',hatM4);
+    document.getElementById('hat5').removeEventListener('click',hatM5);
+    document.getElementById('hat6').removeEventListener('click',hatM6);
+    document.getElementById('hat7').removeEventListener('click',hatM7);
+    document.getElementById('mal3').style.display = 'none';
+    document.getElementById('mal9').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal3);
+}
+const hatM4 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('hat1').removeEventListener('click',hatM1);
+    document.getElementById('hat2').removeEventListener('click',hatM2);
+    document.getElementById('hat3').removeEventListener('click',hatM3);
+    document.getElementById('hat4').removeEventListener('click',hatM4);
+    document.getElementById('hat5').removeEventListener('click',hatM5);
+    document.getElementById('hat6').removeEventListener('click',hatM6);
+    document.getElementById('hat7').removeEventListener('click',hatM7);
+    document.getElementById('mal3').style.display = 'none';
+    document.getElementById('mal9').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal3);
+}
+const hatM5 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('hat1').removeEventListener('click',hatM1);
+    document.getElementById('hat2').removeEventListener('click',hatM2);
+    document.getElementById('hat3').removeEventListener('click',hatM3);
+    document.getElementById('hat4').removeEventListener('click',hatM4);
+    document.getElementById('hat5').removeEventListener('click',hatM5);
+    document.getElementById('hat6').removeEventListener('click',hatM6);
+    document.getElementById('hat7').removeEventListener('click',hatM7);
+    document.getElementById('mal3').style.display = 'none';
+    document.getElementById('mal7').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal3);
+}
+const hatM6 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('hat1').removeEventListener('click',hatM1);
+    document.getElementById('hat2').removeEventListener('click',hatM2);
+    document.getElementById('hat3').removeEventListener('click',hatM3);
+    document.getElementById('hat4').removeEventListener('click',hatM4);
+    document.getElementById('hat5').removeEventListener('click',hatM5);
+    document.getElementById('hat6').removeEventListener('click',hatM6);
+    document.getElementById('hat7').removeEventListener('click',hatM7);
+    document.getElementById('mal3').style.display = 'none';
+    document.getElementById('mal12').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal3);
+}
+const hatM7 = () =>{
+    document.getElementById('back').removeEventListener('click',mhal);
+    document.getElementById('hat1').removeEventListener('click',hatM1);
+    document.getElementById('hat2').removeEventListener('click',hatM2);
+    document.getElementById('hat3').removeEventListener('click',hatM3);
+    document.getElementById('hat4').removeEventListener('click',hatM4);
+    document.getElementById('hat5').removeEventListener('click',hatM5);
+    document.getElementById('hat6').removeEventListener('click',hatM6);
+    document.getElementById('hat7').removeEventListener('click',hatM7);
+    document.getElementById('mal3').style.display = 'none';
+    document.getElementById('mal11').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal3);
+}
+const mhal4 = () =>{
+    document.getElementById('mha1').removeEventListener('click',mhal2);
+    document.getElementById('mha2').removeEventListener('click',mhal3);
+    document.getElementById('mha3').removeEventListener('click',mhal4);
+    document.getElementById('back').removeEventListener('click',page4);
+    document.getElementById('mal1').style.display = 'none';
+    document.getElementById('mal4').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',mhal);
+}
 const north = () =>{
     document.getElementById('toMarhas').removeEventListener('click',marhas);
     document.getElementById('toFArea').removeEventListener('click',fireArea);
     document.getElementById('toDarom').removeEventListener('click',darom);
     document.getElementById('toMNorth').removeEventListener('click',north);
+    document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('back').removeEventListener('click',north);
     document.getElementById('page4').style.display = 'none';
@@ -129,9 +409,10 @@ const darom = () =>{
     document.getElementById('toMarhas').removeEventListener('click',marhas);
     document.getElementById('toFArea').removeEventListener('click',fireArea);
     document.getElementById('toDarom').removeEventListener('click',darom);
+    document.getElementById('toMNorth').removeEventListener('click',north);
+    document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('back').removeEventListener('click',darom);
-    document.getElementById('toMNorth').removeEventListener('click',north);
     document.getElementById('nextD2').removeEventListener('click',darom3);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('dar2').style.display = 'none';
@@ -331,6 +612,7 @@ const marhas = () =>{
     document.getElementById('toFArea').removeEventListener('click',fireArea);
     document.getElementById('toDarom').removeEventListener('click',darom);
     document.getElementById('toMNorth').removeEventListener('click',north);
+    document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('back').removeEventListener('click',marhas);
     document.getElementById('page4').style.display = 'none';
@@ -762,6 +1044,7 @@ const fireArea = () =>{
     document.getElementById('toFArea').removeEventListener('click',fireArea);
     document.getElementById('toDarom').removeEventListener('click',darom);
     document.getElementById('toMNorth').removeEventListener('click',north);
+    document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('back').removeEventListener('click',fireArea);
     document.getElementById('page4').style.display = 'none';
