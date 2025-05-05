@@ -471,3 +471,123 @@
     top: 44.5vh;
     right: 13vw;
 }
+#toMhal{
+    position: absolute;
+    width: 33vw;
+    height: 20vh;
+    top: 43vh;
+    right: 59.5vw;
+}
+#mha1{
+    position: absolute;
+    width: 75vw;
+    height: 9vh;
+    top: 26vh;
+    right: 12.5vw;
+
+}
+#mha2{
+    position: absolute;
+    width: 75vw;
+    height: 8vh;
+    top: 35.5vh;
+    right: 12.5vw;
+}
+#mha3{
+    position: absolute;
+    width: 75vw;
+    height: 9vh;
+    top: 44vh;
+    right: 12.5vw;
+}
+#gd1{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 22vh;
+    right: 5vw;
+}
+#gd2{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 30.2vh;
+    right: 5vw;
+}
+#gd3{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 38.6vh;
+    right: 5vw;
+}
+#gd4{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 22vh;
+    right: 50.5vw;
+}
+#gd5{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 30.2vh;
+    right: 50.5vw;
+}
+#gd6{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 38.6vh;
+    right: 50.5vw;
+}
+#hat1{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 22vh;
+    right: 5vw;
+}
+#hat2{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 30.2vh;
+    right: 5vw;
+}
+#hat3{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 38.6vh;
+    right: 5vw;
+}
+#hat4{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 22vh;
+    right: 50.5vw;
+}
+#hat5{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 30.2vh;
+    right: 50.5vw;
+}
+#hat6{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 38.6vh;
+    right: 50.5vw;
+}
+#hat7{
+    position: absolute;
+    width: 44vw;
+    height: 8vh;
+    top: 47.3vh;
+    right: 28vw;
+}
