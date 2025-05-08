@@ -60,6 +60,8 @@ const page4 = () =>{
     document.getElementById('fireA10').removeEventListener('click',fireArea10);
     document.getElementById('fireA11').removeEventListener('click',fireArea11);
     document.getElementById('fireA12').removeEventListener('click',fireArea12);
+    document.getElementById('nextT1').removeEventListener('click',tiksuv2);
+    document.getElementById('nextT2').removeEventListener('click',tiksuv9);
     document.getElementById('page2').style.display = 'none';
     document.getElementById('marhas').style.display = 'none';
     document.getElementById('fireArea').style.display = 'none';
@@ -73,6 +75,8 @@ const page4 = () =>{
     document.getElementById('north1').style.display = 'none';
     document.getElementById('mal').style.display = 'none';
     document.getElementById('mal1').style.display = 'none';
+    document.getElementById('tiksuv').style.display = 'none';
+    document.getElementById('tik1').style.display = 'none';
     document.getElementById('page3').style.display = 'none';
     document.getElementById('page4').style.display = 'inline';
     document.getElementById('toMarhas').addEventListener('click',marhas);
@@ -81,6 +85,7 @@ const page4 = () =>{
     document.getElementById('toMNorth').addEventListener('click',north);
     document.getElementById('toMhal').addEventListener('click',mhal);
     document.getElementById('toSvil').addEventListener('click',svil);
+    document.getElementById('toTik').addEventListener('click',tiksuv);
     // document.getElementById('trains').addEventListener('click',seeTrain);
 }
 const seeTrain = () =>{
@@ -90,6 +95,198 @@ function addTrain (name){
     console.log(name);
     document.getElementById('training').innerHTML += `<li>${name}</li>`;
 }
+const tiksuv = () =>{
+    document.getElementById('toMarhas').removeEventListener('click',marhas);
+    document.getElementById('toFArea').removeEventListener('click',fireArea);
+    document.getElementById('toDarom').removeEventListener('click',darom);
+    document.getElementById('toMNorth').removeEventListener('click',north);
+    document.getElementById('toMhal').removeEventListener('click',mhal);
+    document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('toTik').removeEventListener('click',tiksuv);
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('mTik1').removeEventListener('click',tiksuv3);
+    document.getElementById('mTik2').removeEventListener('click',tiksuv4);
+    document.getElementById('mTik3').removeEventListener('click',tiksuv5);
+    document.getElementById('mTik4').removeEventListener('click',tiksuv6);
+    document.getElementById('mTik5').removeEventListener('click',tiksuv7);
+    document.getElementById('mTik6').removeEventListener('click',tiksuv8);
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('page4').style.display = 'none';
+    document.getElementById('tik2').style.display = 'none';
+    document.getElementById('tik9').style.display = 'none';
+    document.getElementById('back').style.display = 'inline';
+    document.getElementById('tiksuv').style.display = 'inline';
+    document.getElementById('tik1').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',page4);
+    document.getElementById('nextT1').addEventListener('click',tiksuv2);
+    document.getElementById('nextT2').addEventListener('click',tiksuv9);
+}
+const tiksuv2 = () =>{
+    document.getElementById('back').removeEventListener('click',page4);
+    document.getElementById('nextT1').removeEventListener('click',tiksuv2);
+    document.getElementById('nextT2').removeEventListener('click',tiksuv9);
+    document.getElementById('tik1').style.display = 'none';
+    document.getElementById('tik3').style.display = 'none';
+    document.getElementById('tik4').style.display = 'none';
+    document.getElementById('tik5').style.display = 'none';
+    document.getElementById('tik6').style.display = 'none';
+    document.getElementById('tik7').style.display = 'none';
+    document.getElementById('tik8').style.display = 'none';
+    document.getElementById('tik2').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv);
+    document.getElementById('mTik1').addEventListener('click',tiksuv3);
+    document.getElementById('mTik2').addEventListener('click',tiksuv4);
+    document.getElementById('mTik3').addEventListener('click',tiksuv5);
+    document.getElementById('mTik4').addEventListener('click',tiksuv6);
+    document.getElementById('mTik5').addEventListener('click',tiksuv7);
+    document.getElementById('mTik6').addEventListener('click',tiksuv8);
+}
+const tiksuv3 = () =>{
+    document.getElementById('mTik1').removeEventListener('click',tiksuv3);
+    document.getElementById('mTik2').removeEventListener('click',tiksuv4);
+    document.getElementById('mTik3').removeEventListener('click',tiksuv5);
+    document.getElementById('mTik4').removeEventListener('click',tiksuv6);
+    document.getElementById('mTik5').removeEventListener('click',tiksuv7);
+    document.getElementById('mTik6').removeEventListener('click',tiksuv8);
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('tik2').style.display = 'none';
+    document.getElementById('tik3').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv2);
+}
+const tiksuv4 = () =>{
+    document.getElementById('mTik1').removeEventListener('click',tiksuv3);
+    document.getElementById('mTik2').removeEventListener('click',tiksuv4);
+    document.getElementById('mTik3').removeEventListener('click',tiksuv5);
+    document.getElementById('mTik4').removeEventListener('click',tiksuv6);
+    document.getElementById('mTik5').removeEventListener('click',tiksuv7);
+    document.getElementById('mTik6').removeEventListener('click',tiksuv8);
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('tik2').style.display = 'none';
+    document.getElementById('tik4').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv2);
+}
+const tiksuv5 = () =>{
+    document.getElementById('mTik1').removeEventListener('click',tiksuv3);
+    document.getElementById('mTik2').removeEventListener('click',tiksuv4);
+    document.getElementById('mTik3').removeEventListener('click',tiksuv5);
+    document.getElementById('mTik4').removeEventListener('click',tiksuv6);
+    document.getElementById('mTik5').removeEventListener('click',tiksuv7);
+    document.getElementById('mTik6').removeEventListener('click',tiksuv8);
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('tik2').style.display = 'none';
+    document.getElementById('tik5').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv2);
+}
+const tiksuv6 = () =>{
+    document.getElementById('mTik1').removeEventListener('click',tiksuv3);
+    document.getElementById('mTik2').removeEventListener('click',tiksuv4);
+    document.getElementById('mTik3').removeEventListener('click',tiksuv5);
+    document.getElementById('mTik4').removeEventListener('click',tiksuv6);
+    document.getElementById('mTik5').removeEventListener('click',tiksuv7);
+    document.getElementById('mTik6').removeEventListener('click',tiksuv8);
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('tik2').style.display = 'none';
+    document.getElementById('tik6').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv2);
+}
+const tiksuv7 = () =>{
+    document.getElementById('mTik1').removeEventListener('click',tiksuv3);
+    document.getElementById('mTik2').removeEventListener('click',tiksuv4);
+    document.getElementById('mTik3').removeEventListener('click',tiksuv5);
+    document.getElementById('mTik4').removeEventListener('click',tiksuv6);
+    document.getElementById('mTik5').removeEventListener('click',tiksuv7);
+    document.getElementById('mTik6').removeEventListener('click',tiksuv8);
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('tik2').style.display = 'none';
+    document.getElementById('tik7').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv2);
+}
+const tiksuv8 = () =>{
+    document.getElementById('mTik1').removeEventListener('click',tiksuv3);
+    document.getElementById('mTik2').removeEventListener('click',tiksuv4);
+    document.getElementById('mTik3').removeEventListener('click',tiksuv5);
+    document.getElementById('mTik4').removeEventListener('click',tiksuv6);
+    document.getElementById('mTik5').removeEventListener('click',tiksuv7);
+    document.getElementById('mTik6').removeEventListener('click',tiksuv8);
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('tik2').style.display = 'none';
+    document.getElementById('tik8').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv2);
+}
+const tiksuv9 = () =>{
+    document.getElementById('back').removeEventListener('click',page4);
+    document.getElementById('nextT1').removeEventListener('click',tiksuv2);
+    document.getElementById('nextT2').removeEventListener('click',tiksuv9);
+    document.getElementById('back').removeEventListener('click',tiksuv9);
+    document.getElementById('tik1').style.display = 'none';
+    document.getElementById('tik10').style.display = 'none';
+    document.getElementById('tik11').style.display = 'none';
+    document.getElementById('tik12').style.display = 'none';
+    document.getElementById('tik13').style.display = 'none';
+    document.getElementById('tik14').style.display = 'none';
+    document.getElementById('tik9').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv);
+    document.getElementById('Ttik1').addEventListener('click',tiksuv10);
+    document.getElementById('Ttik2').addEventListener('click',tiksuv11);
+    document.getElementById('Ttik3').addEventListener('click',tiksuv12);
+    document.getElementById('Ttik4').addEventListener('click',tiksuv13);
+    document.getElementById('Ttik5').addEventListener('click',tiksuv14);
+}
+const tiksuv10 = () =>{
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('Ttik1').removeEventListener('click',tiksuv10);
+    document.getElementById('Ttik2').removeEventListener('click',tiksuv11);
+    document.getElementById('Ttik3').removeEventListener('click',tiksuv12);
+    document.getElementById('Ttik4').removeEventListener('click',tiksuv13);
+    document.getElementById('Ttik5').removeEventListener('click',tiksuv14);
+    document.getElementById('tik9').style.display = 'none';
+    document.getElementById('tik10').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv9);
+}
+const tiksuv11 = () =>{
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('Ttik1').removeEventListener('click',tiksuv10);
+    document.getElementById('Ttik2').removeEventListener('click',tiksuv11);
+    document.getElementById('Ttik3').removeEventListener('click',tiksuv12);
+    document.getElementById('Ttik4').removeEventListener('click',tiksuv13);
+    document.getElementById('Ttik5').removeEventListener('click',tiksuv14);
+    document.getElementById('tik9').style.display = 'none';
+    document.getElementById('tik11').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv9);
+}
+const tiksuv12 = () =>{
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('Ttik1').removeEventListener('click',tiksuv10);
+    document.getElementById('Ttik2').removeEventListener('click',tiksuv11);
+    document.getElementById('Ttik3').removeEventListener('click',tiksuv12);
+    document.getElementById('Ttik4').removeEventListener('click',tiksuv13);
+    document.getElementById('Ttik5').removeEventListener('click',tiksuv14);
+    document.getElementById('tik9').style.display = 'none';
+    document.getElementById('tik12').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv9);
+}
+const tiksuv13 = () =>{
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('Ttik1').removeEventListener('click',tiksuv10);
+    document.getElementById('Ttik2').removeEventListener('click',tiksuv11);
+    document.getElementById('Ttik3').removeEventListener('click',tiksuv12);
+    document.getElementById('Ttik4').removeEventListener('click',tiksuv13);
+    document.getElementById('Ttik5').removeEventListener('click',tiksuv14);
+    document.getElementById('tik9').style.display = 'none';
+    document.getElementById('tik13').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv9);
+}
+const tiksuv14 = () =>{
+    document.getElementById('back').removeEventListener('click',tiksuv);
+    document.getElementById('Ttik1').removeEventListener('click',tiksuv10);
+    document.getElementById('Ttik2').removeEventListener('click',tiksuv11);
+    document.getElementById('Ttik3').removeEventListener('click',tiksuv12);
+    document.getElementById('Ttik4').removeEventListener('click',tiksuv13);
+    document.getElementById('Ttik5').removeEventListener('click',tiksuv14);
+    document.getElementById('tik9').style.display = 'none';
+    document.getElementById('tik14').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',tiksuv9);
+}
 const mhal = () =>{
     document.getElementById('toMarhas').removeEventListener('click',marhas);
     document.getElementById('toFArea').removeEventListener('click',fireArea);
@@ -97,6 +294,7 @@ const mhal = () =>{
     document.getElementById('toMNorth').removeEventListener('click',north);
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('toTik').removeEventListener('click',tiksuv);
     document.getElementById('back').removeEventListener('click',mhal);
     document.getElementById('gd1').removeEventListener('click',gdudM1);
     document.getElementById('gd2').removeEventListener('click',gdudM2);
@@ -355,6 +553,7 @@ const north = () =>{
     document.getElementById('toMNorth').removeEventListener('click',north);
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('toTik').removeEventListener('click',tiksuv);
     document.getElementById('back').removeEventListener('click',north);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('north2').style.display = 'none';
@@ -400,7 +599,9 @@ const svil = () =>{
     document.getElementById('toFArea').removeEventListener('click',fireArea);
     document.getElementById('toDarom').removeEventListener('click',darom);
     document.getElementById('toMNorth').removeEventListener('click',north);
+    document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('toTik').removeEventListener('click',tiksuv);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('page3').style.display = 'inline';
     document.getElementById('toKatalog').addEventListener('click',page4);
@@ -412,6 +613,7 @@ const darom = () =>{
     document.getElementById('toMNorth').removeEventListener('click',north);
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('toTik').removeEventListener('click',tiksuv);
     document.getElementById('back').removeEventListener('click',darom);
     document.getElementById('nextD2').removeEventListener('click',darom3);
     document.getElementById('page4').style.display = 'none';
@@ -427,6 +629,10 @@ const darom2 = () =>{
     document.getElementById('back').removeEventListener('click',page4);
     document.getElementById('nextD').removeEventListener('click',darom2);
     document.getElementById('back').removeEventListener('click',darom2);
+    document.getElementById('darom1').removeEventListener('click',Dhir);
+    document.getElementById('darom2').removeEventListener('click',Dhhn);
+    document.getElementById('darom3').removeEventListener('click',Dhsn);
+    document.getElementById('darom4').removeEventListener('click',mikzoaot);
     document.getElementById('dar1').style.display = 'none';
     document.getElementById('nextD').style.display = 'none';
     document.getElementById('dar3').style.display = 'none';
@@ -449,14 +655,53 @@ const darom3 = () =>{
     document.getElementById('darom').style.display = 'inline'; 
     document.getElementById('nextD2').style.display = 'none';
     document.getElementById('dar2').style.display = 'none';
+    document.getElementById('Dhir1').style.display = 'none';
+    document.getElementById('Dhhn1').style.display = 'none';
+    document.getElementById('Dhsn1').style.display = 'none';
     document.getElementById('mikzoaot').style.display = 'none';
     document.getElementById('mik1').style.display = 'none';
     document.getElementById('dar3').style.display = 'inline';
     document.getElementById('back').addEventListener('click',darom2);
+    document.getElementById('darom1').addEventListener('click',Dhir);
+    document.getElementById('darom2').addEventListener('click',Dhhn);
+    document.getElementById('darom3').addEventListener('click',Dhsn);
     document.getElementById('darom4').addEventListener('click',mikzoaot);
+}
+const Dhir = () =>{
+    document.getElementById('back').removeEventListener('click',darom2);
+    document.getElementById('darom1').removeEventListener('click',Dhir);
+    document.getElementById('darom2').removeEventListener('click',Dhhn);
+    document.getElementById('darom3').removeEventListener('click',Dhsn);
+    document.getElementById('darom4').removeEventListener('click',mikzoaot);
+    document.getElementById('dar3').style.display = 'none';
+    document.getElementById('Dhir1').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',darom3);
+}
+const Dhhn = () =>{
+    document.getElementById('back').removeEventListener('click',darom2);
+    document.getElementById('darom1').removeEventListener('click',Dhir);
+    document.getElementById('darom2').removeEventListener('click',Dhhn);
+    document.getElementById('darom3').removeEventListener('click',Dhsn);
+    document.getElementById('darom4').removeEventListener('click',mikzoaot);
+    document.getElementById('dar3').style.display = 'none';
+    document.getElementById('Dhhn1').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',darom3);
+}
+const Dhsn = () =>{
+    document.getElementById('back').removeEventListener('click',darom2);
+    document.getElementById('darom1').removeEventListener('click',Dhir);
+    document.getElementById('darom2').removeEventListener('click',Dhhn);
+    document.getElementById('darom3').removeEventListener('click',Dhsn);
+    document.getElementById('darom4').removeEventListener('click',mikzoaot);
+    document.getElementById('dar3').style.display = 'none';
+    document.getElementById('Dhsn1').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',darom3);
 }
 const mikzoaot = () =>{
     document.getElementById('back').removeEventListener('click',darom2);
+    document.getElementById('darom1').removeEventListener('click',Dhir);
+    document.getElementById('darom2').removeEventListener('click',Dhhn);
+    document.getElementById('darom3').removeEventListener('click',Dhsn);
     document.getElementById('darom4').removeEventListener('click',mikzoaot);
     document.getElementById('back').removeEventListener('click',mikzoaot);
     document.getElementById('darom').style.display = 'none'; 
@@ -614,6 +859,7 @@ const marhas = () =>{
     document.getElementById('toMNorth').removeEventListener('click',north);
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('toTik').removeEventListener('click',tiksuv);
     document.getElementById('back').removeEventListener('click',marhas);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('mar2').style.display = 'none';
@@ -1046,6 +1292,7 @@ const fireArea = () =>{
     document.getElementById('toMNorth').removeEventListener('click',north);
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('toTik').removeEventListener('click',tiksuv);
     document.getElementById('back').removeEventListener('click',fireArea);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('fA2').style.display = 'none';
