@@ -1,732 +1,388 @@
-*{
-    direction: rtl;
-}
-.bg{
-    position: absolute;
-    background-image: url(./BG.png);
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 0vh;
-    right: 0vw;
-}
-.icons{
-    position: absolute;
-    height: 8vh;
-    top: 2vh;
-    left: 50%;
-    transform: translate(-50%);
-}
-#textP1{
-    position: absolute;
-    top: 17vh;
-    width: 43vh;
-    left: 50%;
-    transform: translate(-50%);
-}
-#textP2{
-    position: absolute;
-    width: 99vw;
-    bottom: 5vh;
-    right: 2vw;
-}
-.pages{
-    display: none;
-}
-#kata3{
-    position: absolute;
-    width: 37vh;
-    bottom: 6vh;
-    left: 50%;
-    transform: translate(-50%);
-}
-#next{
-    position: absolute;
-    width: 61vw;
-    bottom: 6vh;
-    right: 20vw;
-}
-#textP3{
-    position: absolute;
-    top: 0vh;
-    right: 0vw;
-    width: 100vw;
-}
-#toKatalog{
-    position: absolute;
-    width: 56vw;
-    height: 6vh;
-    bottom: -57vh;
-    right: 22vw;
-}
-/* #mySearch{
-    position: absolute;
-    width: 79vw;
-    z-index: 1;
-    right: 6vw;
-    font-size: 2vh;
-}
-#search{
-    z-index: -2;
-    position: absolute;
-    top: 6vh;
-    right: 7vw;
-    font-size: 2.5vh;
-} */
-#info{
-    position: absolute;
-    width: 100vw;
-    top: 0vh;
-    right: 0vw;
-}
-#toSvil{
-    position: absolute;
-    width: 33vw;
-    height: 22vh;
-    top: 68vh;
-    right: 9vw;
-}
-#toMarhas{
-    position: absolute;
-    width: 33vw;
-    height: 22vh;
-    top: 45vh;
-    right: 8vw;
-}
-#toTik{
-    position: absolute;
-    width: 33vw;
-    height: 22vh;
-    top: 92vh;
-    right: 58vw
-}
-.imgs{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0vh;
-    right: 0vw;
-}
-#marhsK{
-    position: absolute;
-    width: 93vw;
-    height: 8vh;
-    bottom: 0vh;
-    right: 3vw;
-}
-#back{
-    display: none;
-    position: absolute;
-    color: ghostwhite;
-    z-index: 2;
-    font-size: 2.5vh;
-    top: 6.7vh;
-    left: 13vw;
-    text-decoration-line: underline;
-}
-#trains{
-    display: none;
-    position: absolute;
-    color: ghostwhite;
-    z-index: 2;
-    font-size: 2.5vh;
-    top: 6.7vh;
-    left: 13vw;
-    text-decoration-line: underline;
-}
-#marhsAdd{
-    display: none;
-    position: absolute;
-    width: 56vw;
-    height: 5vh;
-    bottom: 4vh;
-    right: 22vw;
-    z-index: 2;
-}
-#train3{
-    position: absolute;
-    width: 30vw;
-    height: 9vh;
-    top: 24.4vh;
-    right: 6vw;
-}
-#train4{
-    position: absolute;
-    width: 30vw;
-    height: 9.5vh;
-    top: 34.4vh;
-    right: 6vw;
-}
-#train5{
-    position: absolute;
-    width: 30vw;
-    height: 9.3vh;
-    top: 44.8vh;
-    right: 6vw;
-}
-#train6{
-    position: absolute;
-    width: 30vw;
-    height: 9.5vh;
-    top: 55vh;
-    right: 6vw;
-}
-#train7{
-    position: absolute;
-    width: 30vw;
-    height: 9.5vh;
-    top: 65.4vh;
-    right: 6vw;
-}
-#train8{
-    position: absolute;
-    width: 53vw;
-    height: 8vh;
-    top: 24vh;
-    right: 41vw;
-}
-#train9{
-    position: absolute;
-    width: 53vw;
-    height: 8vh;
-    top: 32.4vh;
-    right: 41vw;
-}
-#train10{
-    position: absolute;
-    width: 53vw;
-    height: 8vh;
-    top: 40.5vh;
-    right: 41vw;
-}
-#train11{
-    position: absolute;
-    width: 53vw;
-    height: 8vh;
-    top: 49vh;
-    right: 41vw;
-}
-#train12{
-    position: absolute;
-    width: 53vw;
-    height: 8vh;
-    top: 57vh;
-    right: 41vw;
-}
-#train13{
-    position: absolute;
-    width: 53vw;
-    height: 8vh;
-    top: 65.5vh;
-    right: 41vw;
-}
-#train14{
-    position: absolute;
-    width: 53vw;
-    height: 8vh;
-    top: 73.8vh;
-    right: 41vw;
-}
-#train15{
-    position: absolute;
-    width: 53vw;
-    height: 8vh;
-    top: 82vh;
-    right: 41vw;
-}
-#k1{
-    position: absolute;
-    width: 30vw;
-    height: 9vh;
-    top: 23.8vh;
-    right: 18vw;  
-}
-#k2{
-    position: absolute;
-    width: 30vw;
-    height: 9.2vh;
-    top: 34.2vh;
-    right: 18vw;
-}
-#k3{
-    position: absolute;
-    width: 30vw;
-    height: 9vh;
-    top: 23.8vh;
-    right: 51.7vw;
-}
-#k4{
-    position: absolute;
-    width: 30vw;
-    height: 9.2vh;
-    top: 34.2vh;
-    right: 51.7vw;
-}
-#toFArea{
-    position: absolute;
-    width: 33vw;
-    height: 29vh;
-    top: 116vh;
-    right: 8vw;
-}
-#fireA2{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 24.6vh;
-    right: 10vw;
-}
-#fireA3{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 33.1vh;
-    right: 10vw;
+<!DOCTYPE html>
+<html lang="en">
 
-}
-#fireA4{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 41.8vh;
-    right: 10vw;
-}
-#fireA5{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 50.2vh;
-    right: 10vw;
-}
-#fireA6{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 59vh;
-    right: 10vw;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קטלוג האימונים</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
+</head>
 
-}
-#fireA7{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 24.6vh;
-    right: 50.5vw;
-}
-#fireA8{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 33.1vh;
-    right: 50.5vw;
-}
-#fireA9{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 41.8vh;
-    right: 50.5vw;
-}
-#fireA10{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 50.2vh;
-    right: 50.5vw;
-}
-#fireA11{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 59vh;
-    right: 50.5vw;
-}
-#fireA12{
-    position: absolute;
-    width: 39vw;
-    height: 8vh;
-    top: 67.6vh;
-    right: 30.5vw;
-}
-#toMNorth{
-    position: absolute;
-    width: 33vw;
-    height: 22vh;
-    top: 21vh;
-    right: 9vw;
-}
-#toDarom{
-    position: absolute;
-    width: 33vw;
-    height: 21vh;
-    top: 22vh;
-    right: 58vw;
-}
-#nextD{
-    display: none;
-    position: absolute;
-    width: 92vw;
-    height: 5vh;
-    top: 90vh;
-    right: 4vw;
-}
-#nextD2{
-    display: none;
-    position: absolute;
-    width: 92vw;
-    height: 5vh;
-    top: 90vh;
-    right: 4vw;
-}
-#darom1{
-    position: absolute;
-    width: 75vw;
-    height: 8vh;
-    top: 27vh;
-    right: 12vw;
-}
-#darom2{
-    position: absolute;
-    width: 75vw;
-    height: 8vh;
-    top: 35.5vh;
-    right: 12vw;
-}
-#darom3{
-    position: absolute;
-    width: 75vw;
-    height: 8vh;
-    top: 44.2vh;
-    right: 12vw;
-}
-#darom4{
-    position: absolute;
-    width: 75vw;
-    height: 8vh;
-    top: 53vh;
-    right: 12vw;
-}
-#mikz1{
-    position: absolute;
-    width: 46vw;
-    height: 8vh;
-    top: 37vh;
-    right: 3vw;
-}
-#mikz2{
-    position: absolute;
-    width: 46vw;
-    height: 8vh;
-    top: 45.5vh;
-    right: 3vw;
-}
-#mikz3{
-    position: absolute;
-    width: 46vw;
-    height: 8vh;
-    top: 54.5vh;
-    right: 3vw;
-}
-#mikz4{
-    position: absolute;
-    width: 46vw;
-    height: 8vh;
-    top: 63vh;
-    right: 3vw;
-}
-#mikz5{
-    position: absolute;
-    width: 46vw;
-    height: 8vh;
-    top: 37vh;
-    right: 51vw;
-}
-#mikz6{
-    position: absolute;
-    width: 46vw;
-    height: 8vh;
-    top: 45.6vh;
-    right: 51vw;
-}
-#mikz7{
-    position: absolute;
-    width: 46vw;
-    height: 8vh;
-    top: 54.6vh;
-    right: 51vw;
-}
-#n1{
-    position: absolute;
-    width: 74vw;
-    height: 8vh;
-    top: 26.5vh;
-    right: 13vw; 
-}
-#n2{
-    position: absolute;
-    width: 74vw;
-    height: 8vh;
-    top: 35.5vh;
-    right: 13vw;
-}
-#n3{
-    position: absolute;
-    width: 74vw;
-    height: 8vh;
-    top: 44.5vh;
-    right: 13vw;
-}
-#toMhal{
-    position: absolute;
-    width: 33vw;
-    height: 22vh;
-    top: 45vh;
-    right: 58.5vw
-}
-#mha1{
-    position: absolute;
-    width: 75vw;
-    height: 9vh;
-    top: 26vh;
-    right: 12.5vw;
+<body>
+    <div id="page1" class="bg">
+        <img src="./assets/icons.png" alt="icons" class="icons">
+        <img src="./assets/textP1.png" alt="textP1" id="textP1">
+    </div>
+    <div id="page2" class="pages bg">
+        <img src="./assets/icons.png" alt="icons" class="icons">
+        <img src="./assets/textP2.png" alt="textP2" id="textP2">
+        <img src="./assets/next-01.png" alt="next-01" id="next">
+    </div>
+    <div id="page3" class="pages">
+        <img src="./assets/textP3.png" alt="textP3" id="textP3">
+        <div id="toKatalog"></div>
+    </div>
+    <div id="myTrain" class="pages">
+        <ul id="training"></ul>
+    </div>
+    <div id="page4" class="pages">
+        <!-- <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="..." title="type in a name">
+        <ul id="myMenu">
+            <li class="search"><a href="#">היי</a></li>
+            <li class="search"><a href="#">ביי</a></li>
+            <li class="search"><a href="#">מהה</a></li>
+        </ul> -->
+        <img src="./assets/infos.png" alt="info" id="info">
+        <div id="toMarhas"></div>
+        <div id="toFArea"></div>
+        <div id="toMNorth"></div>
+        <div id="toDarom"></div>
+        <div id="toSvil"></div>
+        <div id="toMhal"></div>
+        <div id="toTik"></div>
+        <div id="toMatefet"></div>
+    </div>
+    <h1 id="back">חזור</h1>
+    <!-- <h1 id="trains">האימון שלי</h1> -->
+    <div id="marhsAdd"></div>
+    <div id="marhas" class="pages">
+        <div id="mar1" class="pages">
+            <img src="./assets/mrhas/page1.png" alt="page1" id="mar1" class="imgs">
+            <div id="marhsK"></div>
+        </div>
+        <div id="mar2" class="pages">
+            <img src="./assets/mrhas/page2.png" alt="page2" id="mar2" class="imgs">
+            <div id="train3"></div>
+            <div id="train4"></div>
+            <div id="train5"></div>
+            <div id="train6"></div>
+            <div id="train7"></div>
+            <div id="train8"></div>
+            <div id="train9"></div>
+            <div id="train10"></div>
+            <div id="train11"></div>
+            <div id="train12"></div>
+            <div id="train13"></div>
+            <div id="train14"></div>
+            <div id="train15"></div>
+        </div>
+        <div id="mar3" class="pages">
+            <img src="./assets/mrhas/page3.png" alt="page3" id="mar3" class="imgs">
+        </div>
+        <div id="mar4" class="pages">
+            <img src="./assets/mrhas/page4.png" alt="page4" id="mar4" class="imgs">
+        </div>
+        <div id="mar5" class="pages">
+            <img src="./assets/mrhas/page5.png" alt="page5" id="mar5" class="imgs">
+        </div>
+        <div id="mar6" class="pages">
+            <img src="./assets/mrhas/page6.png" alt="page6" id="mar6" class="imgs">
+        </div>
+        <div id="mar7" class="pages">
+            <img src="./assets/mrhas/page7.png" alt="page7" id="mar7" class="imgs">
+        </div>
+        <div id="mar8" class="pages">
+            <img src="./assets/mrhas/kures.png" alt="kures" id="kures" class="imgs">
+            <div id="k1"></div>
+            <div id="k2"></div>
+            <div id="k3"></div>
+            <div id="k4"></div>
+        </div>
+        <div id="kures1" class="pages">
+            <img src="./assets/mrhas/page17.png" alt="page17" id="mar17" class="imgs">
+        </div>
+        <div id="kures2" class="pages">
+            <img src="./assets/mrhas/page19.png" alt="page19" id="mar19" class="imgs">
+        </div>
+        <div id="kures3" class="pages">
+            <img src="./assets/mrhas/page18.png" alt="page18" id="mar18" class="imgs">
+        </div>
+        <div id="kures4" class="pages">
+            <img src="./assets/mrhas/page20.png" alt="page20" id="mar20" class="imgs">
+        </div>
+        <div id="mar9" class="pages">
+            <img src="./assets/mrhas/page16.png" alt="page9" id="mar9" class="imgs">
+        </div>
+        <div id="mar10" class="pages">
+            <img src="./assets/mrhas/page11.png" alt="page11" id="mar10" class="imgs">
+        </div>
+        <div id="mar11" class="pages">
+            <img src="./assets/mrhas/page10.png" alt="page11" id="mar11" class="imgs">
+        </div>
+        <div id="mar12" class="pages">
+            <img src="./assets/mrhas/page12.png" alt="page12" id="mar12" class="imgs">
+        </div>
+        <div id="mar13" class="pages">
+            <img src="./assets/mrhas/page8.png" alt="page8" id="mar8" class="imgs">
+        </div>
+        <div id="mar14" class="pages">
+            <img src="./assets/mrhas/page13.png" alt="page13" id="mar13" class="imgs">
+        </div>
+        <div id="mar15" class="pages">
+            <img src="./assets/mrhas/page11.png" alt="page11" id="mar11" class="imgs">
+        </div>
+    </div>
+    <div id="fireArea" class="pages">
+        <div id="fA1">
+            <img src="./assets/fireArea/page1.png" alt="page1" id="fa1" class="imgs">
+            <div id="fireA2"></div>
+            <div id="fireA3"></div>
+            <div id="fireA4"></div>
+            <div id="fireA5"></div>
+            <div id="fireA6"></div>
+            <div id="fireA7"></div>
+            <div id="fireA8"></div>
+            <div id="fireA9"></div>
+            <div id="fireA10"></div>
+            <div id="fireA11"></div>
+            <div id="fireA12"></div>
+        </div>
+        <div id="fA2" class="pages">
+            <img src="./assets/fireArea/page3.png" alt="page2" id="fa2" class="imgs">
+        </div>
+        <div id="fA3" class="pages">
+            <img src="./assets/fireArea/page5.png" alt="page3" id="fa3" class="imgs">
+        </div>
+        <div id="fA4" class="pages">
+            <img src="./assets/fireArea/page7.png" alt="page4" id="fa4" class="imgs">
+        </div>
+        <div id="fA5" class="pages">
+            <img src="./assets/fireArea/page9.png" alt="page5" id="fa5" class="imgs">
+        </div>
+        <div id="fA6" class="pages">
+            <img src="./assets/fireArea/page10.png" alt="page6" id="fa6" class="imgs">
+        </div>
+        <div id="fA7" class="pages">
+            <img src="./assets/fireArea/page2.png" alt="page7" id="fa7" class="imgs">
+        </div>
+        <div id="fA8" class="pages">
+            <img src="./assets/fireArea/page4.png" alt="page8" id="fa8" class="imgs">
+        </div>
+        <div id="fA9" class="pages">
+            <img src="./assets/fireArea/page6.png" alt="page9" id="fa9" class="imgs">
+        </div>
+        <div id="fA10" class="pages">
+            <img src="./assets/fireArea/page8.png" alt="page10" id="fa10" class="imgs">
+        </div>
+        <div id="fA11" class="pages">
+            <img src="./assets/fireArea/page11.png" alt="page11" id="fa11" class="imgs">
+        </div>
+        <div id="fA12" class="pages">
+            <img src="./assets/fireArea/page12.png" alt="page12" id="fa12" class="imgs">
+        </div>
+    </div>
+    <div id="marcasNorth" class="pages">
+        <div id="north1" class="pages">
+            <img src="./assets/north/page1.png" alt="page1" class="imgs">
+            <div id="n1"></div>
+            <div id="n2"></div>
+            <div id="n3"></div>
+        </div>
+        <div id="north2" class="pages">
+            <img src="./assets/north/n1.png" alt="n1" id="nor1" class="imgs">
+        </div>
+        <div id="north3" class="pages">
+            <img src="./assets/north/n2.png" alt="n2" id="nor2" class="imgs">
+        </div>
+        <div id="north4" class="pages">
+            <img src="./assets/north/n3.png" alt="n3" id="nor3" class="imgs">
+        </div>
+    </div>
+    <div id="darom" class="pages">
+        <div id="dar1" class="pages">
+            <img src="./assets/darom/page1.png" alt="page1" id="dar1" class="imgs">
+            <div id="nextD"></div>
+        </div>
+        <div id="dar2" class="pages">
+            <img src="./assets/darom/page2.png" alt="page2" id="dar2" class="imgs">
+            <div id="nextD2"></div>
+        </div>
+        <div id="dar3" class="pages">
+            <img src="./assets/darom/page3.png" alt="page3" id="dar3" class="imgs">
+            <div id="darom1"></div>
+            <div id="darom2"></div>
+            <div id="darom3"></div>
+            <div id="darom4"></div>
+        </div>
+        <div id="Dhir1" class="pages">
+            <img src="./assets/darom/page4.png" alt="page4" id="dar4" class="imgs">
+        </div>
+        <div id="Dhhn1" class="pages">
+            <img src="./assets/darom/page5.png" alt="page5" id="dar5" class="imgs">
+        </div>
+        <div id="Dhsn1" class="pages">
+            <img src="./assets/darom/page6.png" alt="page6" id="dar6" class="imgs">
+        </div>
+    </div>
+    <div id="mikzoaot" class="pages">
+        <div id="mik1" class="pages">
+            <img src="./assets/mikzoaot/page1.png" alt="page1" id="mik1" class="imgs">
+            <div id="mikz1"></div>
+            <div id="mikz2"></div>
+            <div id="mikz3"></div>
+            <div id="mikz4"></div>
+            <div id="mikz5"></div>
+            <div id="mikz6"></div>
+            <div id="mikz7"></div>
+        </div>
+        <div id="mik2" class="pages">
+            <img src="./assets/mikzoaot/page2.png" alt="page2" id="mik2" class="imgs">
+        </div>
+        <div id="mik3" class="pages">
+            <img src="./assets/mikzoaot/page4.png" alt="page3" id="mik3" class="imgs">
+        </div>
+        <div id="mik4" class="pages">
+            <img src="./assets/mikzoaot/page6.png" alt="page4" id="mik4" class="imgs">
+        </div>
+        <div id="mik5" class="pages">
+            <img src="./assets/mikzoaot/page8.png" alt="page5" id="mik5" class="imgs">
+        </div>
+        <div id="mik6" class="pages">
+            <img src="./assets/mikzoaot/page3.png" alt="page6" id="mik6" class="imgs">
+        </div>
+        <div id="mik7" class="pages">
+            <img src="./assets/mikzoaot/page5.png" alt="page7" id="mik7" class="imgs">
+        </div>
+        <div id="mik8" class="pages">
+            <img src="./assets/mikzoaot/page7.png" alt="page8" id="mik8" class="imgs">
+        </div>
+    </div>
+    <div id="mal" class="pages">
+        <div id="mal1" class="pages">
+            <img src="./assets/mal/page1.png" alt="page1" id="mahl1" class="imgs">
+            <div id="mha1"></div>
+            <div id="mha2"></div>
+            <div id="mha3"></div>
+        </div>
+        <div id="mal2" class="pages">
+            <img src="./assets/mal/page3.png" alt="page2" id="mahl2" class="imgs">
+            <div id="gd1"></div>
+            <div id="gd2"></div>
+            <div id="gd3"></div>
+            <div id="gd4"></div>
+            <div id="gd5"></div>
+            <div id="gd6"></div>
+        </div>
+        <div id="mal3" class="pages">
+            <img src="./assets/mal/page2.png" alt="page3" id="mahl3" class="imgs">
+            <div id="hat1"></div>
+            <div id="hat2"></div>
+            <div id="hat3"></div>
+            <div id="hat4"></div>
+            <div id="hat5"></div>
+            <div id="hat6"></div>
+            <div id="hat7"></div>
+        </div>
+        <div id="mal4" class="pages">
+            <img src="./assets/mal/page4.png" alt="page4" id="mahl4" class="imgs">
+        </div>
+        <div id="mal5" class="pages">
+            <img src="./assets/mal/page5.png" alt="page5" id="mal5" class="imgs">
+        </div>
+        <div id="mal6" class="pages">
+            <img src="./assets/mal/page6.png" alt="page6" id="mal6" class="imgs">
+        </div>
+        <div id="mal7" class="pages">
+            <img src="./assets/mal/page7.png" alt="page7" id="mal7" class="imgs">
+        </div>
+        <div id="mal8" class="pages">
+            <img src="./assets/mal/page8.png" alt="page8" id="mal8" class="imgs">
+        </div>
+        <div id="mal9" class="pages">
+            <img src="./assets/mal/page9.png" alt="page9" id="mal9" class="imgs">
+        </div>
+        <div id="mal10" class="pages">
+            <img src="./assets/mal/page10.png" alt="page10" id="mal10" class="imgs">
+        </div>
+        <div id="mal11" class="pages">
+            <img src="./assets/mal/page11.png" alt="page11" id="mal11" class="imgs">
+        </div>
+        <div id="mal12" class="pages">
+            <img src="./assets/mal/page12.png" alt="page12" id="mal12" class="imgs">
+        </div>
+        <div id="mal13" class="pages">
+            <img src="./assets/mal/page13.png" alt="page13" id="mal13" class="imgs">
+        </div>
+    </div>
+    <div id="tiksuv" class="pages">
+        <div id="tik1" class="pages">
+            <img src="./assets/tiksuv/page 1.png" alt="page1" id="tiks1" class="imgTik">
+            <div id="nextT1"></div>
+            <div id="nextT2"></div>
+        </div>
+        <div id="tik2" class="pages">
+            <img src="./assets/tiksuv/page 2.png" alt="page2" id="tiks2" class="imgs">
+            <div id="mTik1"></div>
+            <div id="mTik2"></div>
+            <div id="mTik3"></div>
+            <div id="mTik4"></div>
+            <div id="mTik5"></div>
+            <div id="mTik6"></div>
+        </div>
+        <div id="tik3" class="pages">
+            <img src="./assets/tiksuv/page 3.png" alt="page3" id="tiks3" class="imgs">
+        </div>
+        <div id="tik4" class="pages">
+            <img src="./assets/tiksuv/page 4.png" alt="page4" id="tiks4" class="imgs">
+        </div>
+        <div id="tik5" class="pages">
+            <img src="./assets/tiksuv/page 7.png" alt="page5" id="tiks5" class="imgs">
+        </div>
+        <div id="tik6" class="pages">
+            <img src="./assets/tiksuv/page 5.png" alt="page6" id="tiks6" class="imgs">
+        </div>
+        <div id="tik7" class="pages">
+            <img src="./assets/tiksuv/page 8.png" alt="page7" id="tiks7" class="imgs">
+        </div>
+        <div id="tik8" class="pages">
+            <img src="./assets/tiksuv/page 6.png" alt="page8" id="tiks8" class="imgs">
+        </div>
+        <div id="tik9" class="pages">
+            <img src="./assets/tiksuv/page 9.png" alt="page9" id="tiks9" class="imgs">
+            <div id="Ttik1"></div>
+            <div id="Ttik2"></div>
+            <div id="Ttik3"></div>
+            <div id="Ttik4"></div>
+            <div id="Ttik5"></div>
+        </div>
+        <div id="tik10" class="pages">
+            <img src="./assets/tiksuv/page 10.png" alt="page10" id="tiks10" class="imgs">
+        </div>
+        <div id="tik11" class="pages">
+            <img src="./assets/tiksuv/page 11.png" alt="page11" id="tiks11" class="imgs">
+        </div>
+        <div id="tik12" class="pages">
+            <img src="./assets/tiksuv/page 12.png" alt="page12" id="tiks12" class="imgs">
+        </div>
+        <div id="tik13" class="pages">
+            <img src="./assets/tiksuv/page 13.png" alt="page13" id="tiks13" class="imgs">
+        </div>
+        <div id="tik14" class="pages">
+            <img src="./assets/tiksuv/page 14.png" alt="page14" id="tiks14" class="imgs">
+        </div>
+    </div>
+    <div id="matefet" class="pages">
+        <div id="mat1" class="pages">
+            <img src="./assets/matefet/page1.png" alt="page1" id="mat1" class="imgs">
+            <div id="tMat1"></div>
+            <div id="tMat2"></div>
+            <div id="tMat3"></div>
+            <div id="tMat4"></div>
+        </div>
+        <div id="mat2" class="pages">
+            <img src="./assets/matefet/page2.png" alt="page2" id="mat2" class="imgs">
+        </div>
+        <div id="mat3" class="pages">
+            <img src="./assets/matefet/page3.png" alt="page3" id="mat3" class="imgs">
+        </div>
+        <div id="mat4" class="pages">
+            <img src="./assets/matefet/page4.png" alt="page4" id="mat4" class="imgs">
+        </div>
+        <div id="mat5" class="pages">
+            <img src="./assets/matefet/page5.png" alt="page5" id="mat5" class="imgs">
+        </div>
+    </div>
+</body>
 
-}
-#mha2{
-    position: absolute;
-    width: 75vw;
-    height: 8vh;
-    top: 35.5vh;
-    right: 12.5vw;
-}
-#mha3{
-    position: absolute;
-    width: 75vw;
-    height: 9vh;
-    top: 44vh;
-    right: 12.5vw;
-}
-#gd1{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 22vh;
-    right: 5vw;
-}
-#gd2{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 30.2vh;
-    right: 5vw;
-}
-#gd3{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 38.6vh;
-    right: 5vw;
-}
-#gd4{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 22vh;
-    right: 50.5vw;
-}
-#gd5{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 30.2vh;
-    right: 50.5vw;
-}
-#gd6{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 38.6vh;
-    right: 50.5vw;
-}
-#hat1{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 22vh;
-    right: 5vw;
-}
-#hat2{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 30.2vh;
-    right: 5vw;
-}
-#hat3{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 38.6vh;
-    right: 5vw;
-}
-#hat4{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 22vh;
-    right: 50.5vw;
-}
-#hat5{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 30.2vh;
-    right: 50.5vw;
-}
-#hat6{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 38.6vh;
-    right: 50.5vw;
-}
-#hat7{
-    position: absolute;
-    width: 44vw;
-    height: 8vh;
-    top: 47.3vh;
-    right: 28vw;
-}
-.imgTik{
-    position: absolute;
-    width: 100vw;
-    top: 0vh;
-    right: 0vw;
-}
-#nextT1{
-    position: absolute;
-    width: 36vw;
-    height: 9vh;
-    top: 134vh;
-    right: 13.5vw;
-}
-#nextT2{
-    position: absolute;
-    width: 36vw;
-    height: 9vh;
-    top: 134vh;
-    right: 50.5vw;
-}
-#mTik1{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 23vh;
-    right: 13vw;
-}
-#mTik2{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 23vh;
-    right: 50vw;
-}
-#mTik3{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 31.5vh;
-    right: 13vw;
-}
-#mTik4{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 31.5vh;
-    right: 50vw;
-}
-#mTik5{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 40vh;
-    right: 13vw;
-}
-#mTik6{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 40vh;
-    right: 50vw;
-}
-#Ttik1{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 28.6vh;
-    right: 13vw;
-}
-#Ttik2{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 28.6vh;
-    right: 50vw;
-}
-#Ttik3{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 37vh;
-    right: 13vw;
-}
-#Ttik4{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 37vh;
-    right: 50vw;
-}
-#Ttik5{
-    position: absolute;
-    width: 36vw;
-    height: 8vh;
-    top: 45.7vh;
-    right: 32vw;
-}
-#toMatefet{
-    position: absolute;
-    width: 37vw;
-    height: 24vh;
-    top: 68vh;
-    right: 56.5vw;
-}
-#tMat1{
-    position: absolute;
-    width: 75vw;
-    height: 8vh;
-    top: 26.6vh;
-    right: 13vw;
-}
-#tMat2{
-    position: absolute;
-    width: 75vw;
-    height: 8vh;
-    top: 35.5vh;
-    right: 13vw;
-}
-#tMat3{
-    position: absolute;
-    width: 75vw;
-    height: 8vh;
-    top: 44.2vh;
-    right: 13vw;
-}
-#tMat4{
-    position: absolute;
-    width: 75vw;
-    height: 8vh;
-    top: 53vh;
-    right: 12.5vw;
-}
+</html>
