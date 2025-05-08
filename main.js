@@ -62,6 +62,10 @@ const page4 = () =>{
     document.getElementById('fireA12').removeEventListener('click',fireArea12);
     document.getElementById('nextT1').removeEventListener('click',tiksuv2);
     document.getElementById('nextT2').removeEventListener('click',tiksuv9);
+    document.getElementById('tMat1').removeEventListener('click',matefet2);
+    document.getElementById('tMat2').removeEventListener('click',matefet3);
+    document.getElementById('tMat3').removeEventListener('click',matefet4);
+    document.getElementById('tMat4').removeEventListener('click',matefet5);
     document.getElementById('page2').style.display = 'none';
     document.getElementById('marhas').style.display = 'none';
     document.getElementById('fireArea').style.display = 'none';
@@ -77,6 +81,8 @@ const page4 = () =>{
     document.getElementById('mal1').style.display = 'none';
     document.getElementById('tiksuv').style.display = 'none';
     document.getElementById('tik1').style.display = 'none';
+    document.getElementById('matefet').style.display = 'none';
+    document.getElementById('mat1').style.display = 'none';
     document.getElementById('page3').style.display = 'none';
     document.getElementById('page4').style.display = 'inline';
     document.getElementById('toMarhas').addEventListener('click',marhas);
@@ -86,6 +92,7 @@ const page4 = () =>{
     document.getElementById('toMhal').addEventListener('click',mhal);
     document.getElementById('toSvil').addEventListener('click',svil);
     document.getElementById('toTik').addEventListener('click',tiksuv);
+    document.getElementById('toMatefet').addEventListener('click',matefet);
     // document.getElementById('trains').addEventListener('click',seeTrain);
 }
 const seeTrain = () =>{
@@ -95,6 +102,70 @@ function addTrain (name){
     console.log(name);
     document.getElementById('training').innerHTML += `<li>${name}</li>`;
 }
+const matefet = () =>{
+    document.getElementById('toMarhas').removeEventListener('click',marhas);
+    document.getElementById('toFArea').removeEventListener('click',fireArea);
+    document.getElementById('toDarom').removeEventListener('click',darom);
+    document.getElementById('toMNorth').removeEventListener('click',north);
+    document.getElementById('toMhal').removeEventListener('click',mhal);
+    document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('toTik').removeEventListener('click',tiksuv);
+    document.getElementById('toMatefet').removeEventListener('click',matefet);
+    document.getElementById('back').removeEventListener('click',matefet);
+    document.getElementById('page4').style.display = 'none';
+    document.getElementById('mat2').style.display = 'none';
+    document.getElementById('mat3').style.display = 'none';
+    document.getElementById('mat4').style.display = 'none';
+    document.getElementById('mat5').style.display = 'none';
+    document.getElementById('back').style.display = 'inline';
+    document.getElementById('matefet').style.display = 'inline';
+    document.getElementById('mat1').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',page4);
+    document.getElementById('tMat1').addEventListener('click',matefet2);
+    document.getElementById('tMat2').addEventListener('click',matefet3);
+    document.getElementById('tMat3').addEventListener('click',matefet4);
+    document.getElementById('tMat4').addEventListener('click',matefet5);
+}
+const matefet2 = () =>{
+    document.getElementById('tMat1').removeEventListener('click',matefet2);
+    document.getElementById('tMat2').removeEventListener('click',matefet3);
+    document.getElementById('tMat3').removeEventListener('click',matefet4);
+    document.getElementById('tMat4').removeEventListener('click',matefet5);
+    document.getElementById('back').removeEventListener('click',page4);
+    document.getElementById('mat1').style.display = 'none';
+    document.getElementById('mat2').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',matefet);
+}
+const matefet3 = () =>{
+    document.getElementById('tMat1').removeEventListener('click',matefet2);
+    document.getElementById('tMat2').removeEventListener('click',matefet3);
+    document.getElementById('tMat3').removeEventListener('click',matefet4);
+    document.getElementById('tMat4').removeEventListener('click',matefet5);
+    document.getElementById('back').removeEventListener('click',page4);
+    document.getElementById('mat1').style.display = 'none';
+    document.getElementById('mat3').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',matefet);
+}
+const matefet4 = () =>{
+    document.getElementById('tMat1').removeEventListener('click',matefet2);
+    document.getElementById('tMat2').removeEventListener('click',matefet3);
+    document.getElementById('tMat3').removeEventListener('click',matefet4);
+    document.getElementById('tMat4').removeEventListener('click',matefet5);
+    document.getElementById('back').removeEventListener('click',page4);
+    document.getElementById('mat1').style.display = 'none';
+    document.getElementById('mat4').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',matefet);
+}
+const matefet5 = () =>{
+    document.getElementById('tMat1').removeEventListener('click',matefet2);
+    document.getElementById('tMat2').removeEventListener('click',matefet3);
+    document.getElementById('tMat3').removeEventListener('click',matefet4);
+    document.getElementById('tMat4').removeEventListener('click',matefet5);
+    document.getElementById('back').removeEventListener('click',page4);
+    document.getElementById('mat1').style.display = 'none';
+    document.getElementById('mat5').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',matefet);
+}
 const tiksuv = () =>{
     document.getElementById('toMarhas').removeEventListener('click',marhas);
     document.getElementById('toFArea').removeEventListener('click',fireArea);
@@ -103,6 +174,7 @@ const tiksuv = () =>{
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('toTik').removeEventListener('click',tiksuv);
+    document.getElementById('toMatefet').removeEventListener('click',matefet);
     document.getElementById('back').removeEventListener('click',tiksuv);
     document.getElementById('mTik1').removeEventListener('click',tiksuv3);
     document.getElementById('mTik2').removeEventListener('click',tiksuv4);
@@ -296,6 +368,7 @@ const mhal = () =>{
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('toTik').removeEventListener('click',tiksuv);
+    document.getElementById('toMatefet').removeEventListener('click',matefet);
     document.getElementById('back').removeEventListener('click',mhal);
     document.getElementById('gd1').removeEventListener('click',gdudM1);
     document.getElementById('gd2').removeEventListener('click',gdudM2);
@@ -555,6 +628,7 @@ const north = () =>{
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('toTik').removeEventListener('click',tiksuv);
+    document.getElementById('toMatefet').removeEventListener('click',matefet);
     document.getElementById('back').removeEventListener('click',north);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('north2').style.display = 'none';
@@ -603,6 +677,7 @@ const svil = () =>{
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('toTik').removeEventListener('click',tiksuv);
+    document.getElementById('toMatefet').removeEventListener('click',matefet);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('page3').style.display = 'inline';
     document.getElementById('toKatalog').addEventListener('click',page4);
@@ -615,6 +690,7 @@ const darom = () =>{
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('toTik').removeEventListener('click',tiksuv);
+    document.getElementById('toMatefet').removeEventListener('click',matefet);
     document.getElementById('back').removeEventListener('click',darom);
     document.getElementById('nextD2').removeEventListener('click',darom3);
     document.getElementById('page4').style.display = 'none';
@@ -861,6 +937,7 @@ const marhas = () =>{
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('toTik').removeEventListener('click',tiksuv);
+    document.getElementById('toMatefet').removeEventListener('click',matefet);
     document.getElementById('back').removeEventListener('click',marhas);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('mar2').style.display = 'none';
@@ -1294,6 +1371,7 @@ const fireArea = () =>{
     document.getElementById('toMhal').removeEventListener('click',mhal);
     document.getElementById('toSvil').removeEventListener('click',svil);
     document.getElementById('toTik').removeEventListener('click',tiksuv);
+    document.getElementById('toMatefet').removeEventListener('click',matefet);
     document.getElementById('back').removeEventListener('click',fireArea);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('fA2').style.display = 'none';
