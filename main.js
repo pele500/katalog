@@ -125,7 +125,7 @@ const tiksuv2 = () =>{
     document.getElementById('back').removeEventListener('click',page4);
     document.getElementById('nextT1').removeEventListener('click',tiksuv2);
     document.getElementById('nextT2').removeEventListener('click',tiksuv9);
-    document.getElementById('back').addEventListener('click',tiksuv2);
+    document.getElementById('back').removeEventListener('click',tiksuv2);
     document.getElementById('tik1').style.display = 'none';
     document.getElementById('tik3').style.display = 'none';
     document.getElementById('tik4').style.display = 'none';
