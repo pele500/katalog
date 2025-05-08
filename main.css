@@ -3,7 +3,7 @@
 }
 .bg{
     position: absolute;
-    background-image: url(./BG.png);
+    background-image: url(./assets/BG.png);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -84,16 +84,23 @@
 #toSvil{
     position: absolute;
     width: 33vw;
-    height: 21vh;
-    top: 65vh;
-    right: 8vw;
+    height: 22vh;
+    top: 68vh;
+    right: 9vw;
 }
 #toMarhas{
     position: absolute;
     width: 33vw;
-    height: 20vh;
-    top: 43vh;
+    height: 22vh;
+    top: 45vh;
     right: 8vw;
+}
+#toTik{
+    position: absolute;
+    width: 33vw;
+    height: 22vh;
+    top: 92vh;
+    right: 58vw
 }
 .imgs{
     position: absolute;
@@ -260,8 +267,8 @@
 #toFArea{
     position: absolute;
     width: 33vw;
-    height:29vh;
-    top: 88vh;
+    height: 29vh;
+    top: 116vh;
     right: 8vw;
 }
 #fireA2{
@@ -348,14 +355,14 @@
     width: 33vw;
     height: 22vh;
     top: 21vh;
-    right: 8vw; 
+    right: 9vw;
 }
 #toDarom{
     position: absolute;
     width: 33vw;
     height: 21vh;
-    top: 20vh;
-    right: 59vw;
+    top: 22vh;
+    right: 58vw;
 }
 #nextD{
     display: none;
@@ -474,9 +481,9 @@
 #toMhal{
     position: absolute;
     width: 33vw;
-    height: 20vh;
-    top: 43vh;
-    right: 59.5vw;
+    height: 22vh;
+    top: 45vh;
+    right: 58.5vw
 }
 #mha1{
     position: absolute;
@@ -590,4 +597,101 @@
     height: 8vh;
     top: 47.3vh;
     right: 28vw;
+}
+.imgTik{
+    position: absolute;
+    width: 100vw;
+    top: 0vh;
+    right: 0vw;
+}
+#nextT1{
+    position: absolute;
+    width: 36vw;
+    height: 9vh;
+    top: 134vh;
+    right: 13.5vw;
+}
+#nextT2{
+    position: absolute;
+    width: 36vw;
+    height: 9vh;
+    top: 134vh;
+    right: 50.5vw;
+}
+#mTik1{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 23vh;
+    right: 13vw;
+}
+#mTik2{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 23vh;
+    right: 50vw;
+}
+#mTik3{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 31.5vh;
+    right: 13vw;
+}
+#mTik4{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 31.5vh;
+    right: 50vw;
+}
+#mTik5{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 40vh;
+    right: 13vw;
+}
+#mTik6{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 40vh;
+    right: 50vw;
+}
+#Ttik1{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 28.6vh;
+    right: 13vw;
+}
+#Ttik2{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 28.6vh;
+    right: 50vw;
+}
+#Ttik3{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 37vh;
+    right: 13vw;
+}
+#Ttik4{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 37vh;
+    right: 50vw;
+}
+#Ttik5{
+    position: absolute;
+    width: 36vw;
+    height: 8vh;
+    top: 45.7vh;
+    right: 32vw;
 }
