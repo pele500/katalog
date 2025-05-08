@@ -3,7 +3,7 @@
 }
 .bg{
     position: absolute;
-    background-image: url(./assets/BG.png);
+    background-image: url(./BG.png);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -741,21 +741,21 @@
         position: absolute;
         width: 33vw;
         height: 23vh;
-        top: 22vh;
+        top: 23vh;
         right: 9vw;
     }
     #toDarom {
         position: absolute;
         width: 33vw;
         height: 23vh;
-        top: 22vh;
+        top: 24vh;
         right: 58vw;
     }
     #toSvil {
         position: absolute;
         width: 33vw;
         height: 23vh;
-        top: 71vh;
+        top: 72vh;
         right: 9vw;
     }
     #toMhal {
@@ -769,7 +769,7 @@
         position: absolute;
         width: 33vw;
         height: 24vh;
-        top: 96vh;
+        top: 97vh;
         right: 58vw;
     }
     #toMatefet {
