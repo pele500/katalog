@@ -3,7 +3,7 @@
 }
 .bg{
     position: absolute;
-    background-image: url(./BG.png);
+    background-image: url(./assets/BG.png);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -694,4 +694,39 @@
     height: 8vh;
     top: 45.7vh;
     right: 32vw;
+}
+#toMatefet{
+    position: absolute;
+    width: 37vw;
+    height: 24vh;
+    top: 68vh;
+    right: 56.5vw;
+}
+#tMat1{
+    position: absolute;
+    width: 75vw;
+    height: 8vh;
+    top: 26.6vh;
+    right: 13vw;
+}
+#tMat2{
+    position: absolute;
+    width: 75vw;
+    height: 8vh;
+    top: 35.5vh;
+    right: 13vw;
+}
+#tMat3{
+    position: absolute;
+    width: 75vw;
+    height: 8vh;
+    top: 44.2vh;
+    right: 13vw;
+}
+#tMat4{
+    position: absolute;
+    width: 75vw;
+    height: 8vh;
+    top: 53vh;
+    right: 12.5vw;
 }
