@@ -755,7 +755,7 @@
         position: absolute;
         width: 33vw;
         height: 23vh;
-        top: 72vh;
+        top: 71vh;
         right: 9vw;
     }
     #toMhal {
@@ -785,5 +785,19 @@
         height: 32vh;
         top: 96vh;
         right: 9vw;
+    }
+    #nextT1 {
+        position: absolute;
+        width: 36vw;
+        height: 9vh;
+        top: 140vh;
+        right: 13.5vw;
+    }
+    #nextT2 {
+        position: absolute;
+        width: 36vw;
+        height: 9vh;
+        top: 140vh;
+        right: 50.5vw;
     }
 }
