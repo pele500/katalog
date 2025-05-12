@@ -94,7 +94,7 @@
     position: absolute;
     width: 33vw;
     height: 20vh;
-    top: 43vh;
+    top: 40vh;
     right: 9vw;
     background-color: aliceblue;
     opacity: 0.5;
@@ -103,7 +103,7 @@
     position: absolute;
     width: 33vw;
     height: 22vh;
-    top: 92vh;
+    top: 84vh;
     right: 58vw;
     background-color: aliceblue;
     opacity: 0.5;
@@ -274,7 +274,7 @@
     position: absolute;
     width: 33vw;
     height: 31vh;
-    top: 92vh;
+    top: 84vh;
     right: 9vw;
     background-color: aliceblue;
     opacity: 0.5;
@@ -362,7 +362,7 @@
     position: absolute;
     width: 33vw;
     height: 20vh;
-    top: 21vh;
+    top: 19vh;
     right: 9vw;
     background-color: aliceblue;
     opacity: 0.5;
@@ -371,7 +371,7 @@
     position: absolute;
     width: 33vw;
     height: 20vh;
-    top: 21vh;
+    top: 19vh;
     right: 58vw;
     background-color: aliceblue;
     opacity: 0.5;
@@ -494,7 +494,7 @@
     position: absolute;
     width: 33vw;
     height: 21vh;
-    top: 43vh;
+    top: 40vh;
     right: 58.5vw;
     background-color: aliceblue;
     opacity: 0.5;
@@ -713,7 +713,7 @@
     position: absolute;
     width: 37vw;
     height: 20vh;
-    top: 66vh;
+    top: 61vh;
     right: 56.5vw;
     background-color: aliceblue;
     opacity: 0.5;
@@ -771,7 +771,7 @@
         position: absolute;
         width: 33vw;
         height: 20vh;
-        top: 66vh;
+        top: 61vh;
         right: 9vw;
     }
     #toMhal {
