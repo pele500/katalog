@@ -87,6 +87,8 @@
     height: 20vh;
     top: 66vh;
     right: 9vw;
+    background-color: aliceblue;
+    opacity: 0.5;
 }
 #toMarhas{
     position: absolute;
@@ -94,13 +96,17 @@
     height: 20vh;
     top: 43vh;
     right: 9vw;
+    background-color: aliceblue;
+    opacity: 0.5;
 }
 #toTik{
     position: absolute;
     width: 33vw;
     height: 22vh;
     top: 92vh;
-    right: 58vw
+    right: 58vw;
+    background-color: aliceblue;
+    opacity: 0.5;
 }
 .imgs{
     position: absolute;
@@ -270,6 +276,8 @@
     height: 31vh;
     top: 92vh;
     right: 9vw;
+    background-color: aliceblue;
+    opacity: 0.5;
 }
 #fireA2{
     position: absolute;
@@ -356,6 +364,8 @@
     height: 20vh;
     top: 21vh;
     right: 9vw;
+    background-color: aliceblue;
+    opacity: 0.5;
 }
 #toDarom{
     position: absolute;
@@ -363,6 +373,8 @@
     height: 20vh;
     top: 21vh;
     right: 58vw;
+    background-color: aliceblue;
+    opacity: 0.5;
 }
 #nextD{
     display: none;
@@ -483,7 +495,9 @@
     width: 33vw;
     height: 21vh;
     top: 43vh;
-    right: 58.5vw
+    right: 58.5vw;
+    background-color: aliceblue;
+    opacity: 0.5;
 }
 #mha1{
     position: absolute;
@@ -701,6 +715,8 @@
     height: 20vh;
     top: 66vh;
     right: 56.5vw;
+    background-color: aliceblue;
+    opacity: 0.5;
 }
 #tMat1{
     position: absolute;
