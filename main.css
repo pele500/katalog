@@ -84,8 +84,8 @@
 #toSvil{
     position: absolute;
     width: 33vw;
-    height: 22vh;
-    top: 68vh;
+    height: 20vh;
+    top: 66vh;
     right: 9vw;
 }
 #toMarhas{
@@ -481,8 +481,8 @@
 #toMhal{
     position: absolute;
     width: 33vw;
-    height: 22vh;
-    top: 45vh;
+    height: 21vh;
+    top: 43vh;
     right: 58.5vw
 }
 #mha1{
@@ -782,8 +782,8 @@
     #toFArea {
         position: absolute;
         width: 33vw;
-        height: 29vh;
-        top: 88vh;
+        height: 28vh;
+        top: 89vh;
         right: 9vw;
     }
     #nextT1 {
