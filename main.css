@@ -85,9 +85,9 @@
     position: absolute;
     width: 33vw;
     height: 20vh;
-    top: 66vh;
+    top: 61.5vh;
     right: 9vw;
-    background-color: seashell;
+    background-color: indianred;
     opacity: 0.5;
 }
 #toMarhas{
@@ -96,16 +96,16 @@
     height: 20vh;
     top: 40vh;
     right: 9vw;
-    background-color: seashell;
+    background-color: indianred;
     opacity: 0.5;
 }
 #toTik{
     position: absolute;
     width: 33vw;
-    height: 22vh;
-    top: 84vh;
+    height: 20vh;
+    top: 83vh;
     right: 58vw;
-    background-color: seashell;
+    background-color: indianred;
     opacity: 0.5;
 }
 .imgs{
@@ -273,10 +273,10 @@
 #toFArea{
     position: absolute;
     width: 33vw;
-    height: 31vh;
-    top: 84vh;
+    height: 27vh;
+    top: 83vh;
     right: 9vw;
-    background-color: seashell;
+    background-color: indianred;
     opacity: 0.5;
 }
 #fireA2{
@@ -364,7 +364,7 @@
     height: 20vh;
     top: 19vh;
     right: 9vw;
-    background-color: seashell;
+    background-color: indianred;
     opacity: 0.5;
 }
 #toDarom{
@@ -373,7 +373,7 @@
     height: 20vh;
     top: 19vh;
     right: 58vw;
-    background-color: seashell;
+    background-color: indianred;
     opacity: 0.5;
 }
 #nextD{
@@ -493,10 +493,10 @@
 #toMhal{
     position: absolute;
     width: 33vw;
-    height: 21vh;
+    height: 20vh;
     top: 40vh;
     right: 58.5vw;
-    background-color: seashell;
+    background-color: indianred;
     opacity: 0.5;
 }
 #mha1{
@@ -713,9 +713,9 @@
     position: absolute;
     width: 37vw;
     height: 20vh;
-    top: 61vh;
+    top: 61.5vh;
     right: 56.5vw;
-    background-color: seashell;
+    background-color: indianred;
     opacity: 0.5;
 }
 #tMat1{
