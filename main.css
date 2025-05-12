@@ -87,7 +87,6 @@
     height: 20vh;
     top: 61.5vh;
     right: 9vw;
-    background-color: indianred;
     opacity: 0.5;
 }
 #toMarhas{
@@ -96,7 +95,6 @@
     height: 20vh;
     top: 40vh;
     right: 9vw;
-    background-color: indianred;
     opacity: 0.5;
 }
 #toTik{
@@ -105,7 +103,6 @@
     height: 20vh;
     top: 83vh;
     right: 58vw;
-    background-color: indianred;
     opacity: 0.5;
 }
 .imgs{
@@ -276,7 +273,6 @@
     height: 27vh;
     top: 83vh;
     right: 9vw;
-    background-color: indianred;
     opacity: 0.5;
 }
 #fireA2{
@@ -364,7 +360,6 @@
     height: 20vh;
     top: 19vh;
     right: 9vw;
-    background-color: indianred;
     opacity: 0.5;
 }
 #toDarom{
@@ -373,7 +368,6 @@
     height: 20vh;
     top: 19vh;
     right: 58vw;
-    background-color: indianred;
     opacity: 0.5;
 }
 #nextD{
@@ -496,7 +490,6 @@
     height: 20vh;
     top: 40vh;
     right: 58.5vw;
-    background-color: indianred;
     opacity: 0.5;
 }
 #mha1{
@@ -715,7 +708,6 @@
     height: 20vh;
     top: 61.5vh;
     right: 56.5vw;
-    background-color: indianred;
     opacity: 0.5;
 }
 #tMat1{
@@ -752,6 +744,7 @@
         height: 23vh;
         top: 47vh;
         right: 10vw;
+        background-color: indianred;
     }
     #toMNorth {
         position: absolute;
@@ -759,6 +752,7 @@
         height: 23vh;
         top: 23vh;
         right: 9vw;
+        background-color: indianred;
     }
     #toDarom {
         position: absolute;
@@ -766,6 +760,7 @@
         height: 23vh;
         top: 24vh;
         right: 58vw;
+        background-color: indianred;
     }
     #toSvil {
         position: absolute;
@@ -773,6 +768,7 @@
         height: 20vh;
         top: 61vh;
         right: 9vw;
+        background-color: indianred;
     }
     #toMhal {
         position: absolute;
@@ -780,6 +776,7 @@
         height: 20vh;
         top: 43.5vh;
         right: 58.5vw;
+        background-color: indianred;
     }
     #toTik {
         position: absolute;
@@ -787,6 +784,7 @@
         height: 20vh;
         top: 89vh;
         right: 58vw;
+        background-color: indianred;
     }
     #toMatefet {
         position: absolute;
@@ -794,6 +792,7 @@
         height: 24vh;
         top: 71vh;
         right: 56.5vw;
+        background-color: indianred;
     }
     #toFArea {
         position: absolute;
@@ -801,6 +800,7 @@
         height: 28vh;
         top: 89vh;
         right: 9vw;
+        background-color: indianred;
     }
     #nextT1 {
         position: absolute;
