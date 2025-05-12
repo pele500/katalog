@@ -91,8 +91,8 @@
 #toMarhas{
     position: absolute;
     width: 33vw;
-    height: 22vh;
-    top: 45vh;
+    height: 20vh;
+    top: 43vh;
     right: 9vw;
 }
 #toTik{
@@ -353,15 +353,15 @@
 #toMNorth{
     position: absolute;
     width: 33vw;
-    height: 22vh;
+    height: 20vh;
     top: 21vh;
     right: 9vw;
 }
 #toDarom{
     position: absolute;
     width: 33vw;
-    height: 21vh;
-    top: 22vh;
+    height: 20vh;
+    top: 21vh;
     right: 58vw;
 }
 #nextD{
@@ -698,8 +698,8 @@
 #toMatefet{
     position: absolute;
     width: 37vw;
-    height: 24vh;
-    top: 68vh;
+    height: 20vh;
+    top: 66vh;
     right: 56.5vw;
 }
 #tMat1{
@@ -729,7 +729,7 @@
     height: 8vh;
     top: 53vh;
     right: 12.5vw;
-}@media screen and (max-heigt:661px) {
+}@media screen and (max-heigt:665px) {
     #toMarhas {
         position: absolute;
         width: 33vw;
@@ -754,22 +754,22 @@
     #toSvil {
         position: absolute;
         width: 33vw;
-        height: 23vh;
-        top: 71vh;
+        height: 20vh;
+        top: 66vh;
         right: 9vw;
     }
     #toMhal {
         position: absolute;
         width: 33vw;
-        height: 23vh;
-        top: 47vh;
+        height: 20vh;
+        top: 43.5vh;
         right: 58.5vw;
     }
     #toTik {
         position: absolute;
         width: 33vw;
-        height: 24vh;
-        top: 97vh;
+        height: 20vh;
+        top: 89vh;
         right: 58vw;
     }
     #toMatefet {
@@ -782,8 +782,8 @@
     #toFArea {
         position: absolute;
         width: 33vw;
-        height: 32vh;
-        top: 96vh;
+        height: 29vh;
+        top: 88vh;
         right: 9vw;
     }
     #nextT1 {
