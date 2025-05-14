@@ -748,7 +748,7 @@
     height: 8vh;
     top: 53vh;
     right: 12.5vw;
-}@media screen and (max-heigt:700px) {
+}@media screen and (max-width:410px) {
     #toMarhas {
         position: absolute;
         width: 33vw;
