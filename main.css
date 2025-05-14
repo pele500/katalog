@@ -821,6 +821,15 @@
         background-color: khaki;
         opacity: 0.5;
     }
+    #toKatalog {
+        position: absolute;
+        width: 56vw;
+        height: 6vh;
+        bottom: -46vh;
+        right: 22vw;
+        background-color: khaki;
+        opacity: 0.5;
+    }
     #nextT1 {
         position: absolute;
         width: 36vw;
