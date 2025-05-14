@@ -58,8 +58,10 @@
     position: absolute;
     width: 56vw;
     height: 6vh;
-    bottom: -57vh;
+    bottom: -51vh;
     right: 22vw;
+    background-color: khaki;
+    opacity: 0.5;
 }
 /* #mySearch{
     position: absolute;
@@ -834,15 +836,19 @@
         position: absolute;
         width: 36vw;
         height: 9vh;
-        top: 122vh;
+        top: 119vh;
         right: 13.5vw;
+        background-color: khaki;
+        opacity: 0.5;
     }
     #nextT2 {
         position: absolute;
         width: 36vw;
         height: 9vh;
-        top: 122vh;
+        top: 119vh;
         right: 50.5vw;
+        background-color: khaki;
+        opacity: 0.5;
     }
     #marhsK {
         position: absolute;
