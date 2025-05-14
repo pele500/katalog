@@ -755,7 +755,8 @@
         height: 23vh;
         top: 47vh;
         right: 10vw;
-        background-color: indianred;
+        background-color: khaki;
+        opacity: 0.5;
     }
     #toMNorth {
         position: absolute;
@@ -763,7 +764,8 @@
         height: 23vh;
         top: 23vh;
         right: 9vw;
-        background-color: indianred;
+        background-color: khaki;
+        opacity: 0.5;
     }
     #toDarom {
         position: absolute;
@@ -771,7 +773,8 @@
         height: 23vh;
         top: 24vh;
         right: 58vw;
-        background-color: indianred;
+        background-color: khaki;
+        opacity: 0.5;
     }
     #toSvil {
         position: absolute;
@@ -779,7 +782,8 @@
         height: 20vh;
         top: 61vh;
         right: 9vw;
-        background-color: indianred;
+        background-color: khaki;
+        opacity: 0.5;
     }
     #toMhal {
         position: absolute;
@@ -787,7 +791,8 @@
         height: 20vh;
         top: 43.5vh;
         right: 58.5vw;
-        background-color: indianred;
+        background-color: khaki;
+        opacity: 0.5;
     }
     #toTik {
         position: absolute;
@@ -795,7 +800,8 @@
         height: 20vh;
         top: 89vh;
         right: 58vw;
-        background-color: indianred;
+        background-color: khaki;
+        opacity: 0.5;
     }
     #toMatefet {
         position: absolute;
@@ -803,7 +809,8 @@
         height: 24vh;
         top: 71vh;
         right: 56.5vw;
-        background-color: indianred;
+        background-color: khaki;
+        opacity: 0.5;
     }
     #toFArea {
         position: absolute;
@@ -811,7 +818,8 @@
         height: 28vh;
         top: 89vh;
         right: 9vw;
-        background-color: indianred;
+        background-color: khaki;
+        opacity: 0.5;
     }
     #nextT1 {
         position: absolute;
