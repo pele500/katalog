@@ -58,7 +58,7 @@
     position: absolute;
     width: 56vw;
     height: 6vh;
-    bottom: -48vh;
+    bottom: -52vh;
     right: 22vw;
     background-color: khaki;
     opacity: 0.5;
@@ -118,7 +118,7 @@
     position: absolute;
     width: 93vw;
     height: 10vh;
-    bottom: 0vh;
+    bottom: -1.5vh;
     right: 3vw;
     background-color: cadetblue;
 }
