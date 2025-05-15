@@ -3,7 +3,7 @@
 }
 .bg{
     position: absolute;
-    background-image: url(./BG.png);
+    background-image: url(./assets/BG.png);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -58,9 +58,8 @@
     position: absolute;
     width: 56vw;
     height: 6vh;
-    bottom: -52vh;
+    bottom: -55vh;
     right: 22vw;
-    background-color: mediumaquamarine;
     opacity: 0.5;
 }
 /* #mySearch{
@@ -120,7 +119,6 @@
     height: 10vh;
     bottom: -1.5vh;
     right: 3vw;
-    background-color: cadetblue;
 }
 #back{
     display: none;
@@ -620,7 +618,6 @@
     height: 9vh;
     top: 119vh;
     right: 13.5vw;
-    background-color: cadetblue;
 }
 #nextT2{
     position: absolute;
@@ -628,7 +625,6 @@
     height: 9vh;
     top: 119vh;
     right: 50.5vw;
-    background-color: cadetblue;
 }
 #mTik1{
     position: absolute;
@@ -743,39 +739,5 @@
     top: 53vh;
     right: 12.5vw;
 }@media screen and (max-height:810px) {
-    #toKatalog {
-        position: absolute;
-        width: 56vw;
-        height: 6vh;
-        bottom: -46vh;
-        right: 22vw;
-        background-color: mediumaquamarine;
-        opacity: 0.5;
-    }
-    #nextT1 {
-        position: absolute;
-        width: 36vw;
-        height: 9vh;
-        top: 119vh;
-        right: 13.5vw;
-        background-color: khaki;
-        opacity: 0.5;
-    }
-    #nextT2 {
-        position: absolute;
-        width: 36vw;
-        height: 9vh;
-        top: 119vh;
-        right: 50.5vw;
-        background-color: khaki;
-        opacity: 0.5;
-    }
-    #marhsK {
-        position: absolute;
-        width: 93vw;
-        height: 10vh;
-        bottom: 0vh;
-        right: 3vw;
 
-    }
 }
