@@ -84,6 +84,8 @@ const page4 = () =>{
     document.getElementById('matefet').style.display = 'none';
     document.getElementById('mat1').style.display = 'none';
     document.getElementById('page3').style.display = 'none';
+    document.getElementById('yadmat').style.display = 'none';
+    document.getElementById('yad1').style.display = 'none';
     document.getElementById('page4').style.display = 'inline';
     document.getElementById('toMarhas').addEventListener('click',marhas);
     document.getElementById('toFArea').addEventListener('click',fireArea);
@@ -93,6 +95,7 @@ const page4 = () =>{
     document.getElementById('toSvil').addEventListener('click',svil);
     document.getElementById('toTik').addEventListener('click',tiksuv);
     document.getElementById('toMatefet').addEventListener('click',matefet);
+    document.getElementById('toYadmat').addEventListener('click',yadmat);
     // document.getElementById('trains').addEventListener('click',seeTrain);
 }
 const seeTrain = () =>{
@@ -101,6 +104,47 @@ const seeTrain = () =>{
 function addTrain (name){
     console.log(name);
     document.getElementById('training').innerHTML += `<li>${name}</li>`;
+}
+const yadmat = () =>{
+    document.getElementById('toMarhas').removeEventListener('click',marhas);
+    document.getElementById('toFArea').removeEventListener('click',fireArea);
+    document.getElementById('toDarom').removeEventListener('click',darom);
+    document.getElementById('toMNorth').removeEventListener('click',north);
+    document.getElementById('toMhal').removeEventListener('click',mhal);
+    document.getElementById('toSvil').removeEventListener('click',svil);
+    document.getElementById('toTik').removeEventListener('click',tiksuv);
+    document.getElementById('toMatefet').removeEventListener('click',matefet);
+    document.getElementById('back').removeEventListener('click',matefet);
+    document.getElementById('toYadmat').removeEventListener('click',yadmat);
+    document.getElementById('back').removeEventListener('click',yadmat);
+    document.getElementById('nextY2').removeEventListener('click',yadmat3);
+    document.getElementById('page4').style.display = 'none';
+    document.getElementById('yad2').style.display = 'none';
+    document.getElementById('back').style.display = 'inline';
+    document.getElementById('yadmat').style.display = 'inline';
+    document.getElementById('yad1').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',page4);
+    document.getElementById('nextY').addEventListener('click',yadmat2);
+}
+const yadmat2 = () =>{
+    document.getElementById('back').removeEventListener('click',page4);
+    document.getElementById('nextY').removeEventListener('click',yadmat2);
+    document.getElementById('back').removeEventListener('click',yadmat2);
+    // document.getElementById('nextY2').removeEventListener('click',yadmat4);
+    document.getElementById('yad1').style.display = 'none';
+    document.getElementById('yad3').style.display = 'none';
+    document.getElementById('yad2').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',yadmat);
+    document.getElementById('nextY2').addEventListener('click',yadmat3);
+}
+const yadmat3 = () =>{
+    document.getElementById('back').removeEventListener('click',yadmat);
+    document.getElementById('nextY').removeEventListener('click',yadmat3);
+    document.getElementById('yad2').style.display = 'none';
+    // document.getElementById('yad4').style.display = 'none';
+    document.getElementById('yad3').style.display = 'inline';
+    document.getElementById('back').addEventListener('click',yadmat2);
+    // document.getElementById('nextY2').addEventListener('click',yadmat4);
 }
 const matefet = () =>{
     document.getElementById('toMarhas').removeEventListener('click',marhas);
@@ -112,6 +156,7 @@ const matefet = () =>{
     document.getElementById('toTik').removeEventListener('click',tiksuv);
     document.getElementById('toMatefet').removeEventListener('click',matefet);
     document.getElementById('back').removeEventListener('click',matefet);
+    document.getElementById('toYadmat').removeEventListener('click',yadmat);
     document.getElementById('page4').style.display = 'none';
     document.getElementById('mat2').style.display = 'none';
     document.getElementById('mat3').style.display = 'none';
